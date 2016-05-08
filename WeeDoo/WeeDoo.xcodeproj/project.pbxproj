@@ -17,6 +17,7 @@
 		679966B01CDA4AC000FF52C6 /* WeeDooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966AF1CDA4AC000FF52C6 /* WeeDooUITests.swift */; };
 		679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */; };
 		679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */; };
+		67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8D5301CDE5D910075F435 /* WDTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		679966B11CDA4AC000FF52C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDLoginViewController.swift; sourceTree = "<group>"; };
 		679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harlow Solid Italic Italic.ttf"; sourceTree = "<group>"; };
+		67C8D5301CDE5D910075F435 /* WDTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				679966981CDA4ABF00FF52C6 /* LaunchScreen.storyboard */,
 				6799669B1CDA4ABF00FF52C6 /* Info.plist */,
 				679966931CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld */,
+				67C8D5301CDE5D910075F435 /* WDTextField.swift */,
 			);
 			path = WeeDoo;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			files = (
 				6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */,
 				679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */,
+				67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */,
 				679966951CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld in Sources */,
 				6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */,
 			);

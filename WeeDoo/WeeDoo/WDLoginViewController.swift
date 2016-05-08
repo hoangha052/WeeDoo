@@ -10,18 +10,28 @@ import UIKit
 
 class WDLoginViewController: UIViewController {
 
-    @IBOutlet weak var tfName: UITextField!
+    @IBOutlet weak var tfName: WDTextField!
     
-    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var tfPassword: WDTextField!
     
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        // Do any additional setup after loading the view.
+//        let leftUserView:UIImageView = UIImageView (image: UIImage(named: "icon_username"))
+//        leftUserView.frame = CGRectMake(0, 0, 100, 100)
+//        leftUserView.contentMode = UIViewContentMode.ScaleAspectFit
+//        let leftPWView:UIImageView = UIImageView (image: UIImage(named: "icon_password"))
+//        
+//        self.tfName.leftView = leftUserView
+//        self.tfName.leftViewMode = UITextFieldViewMode.Always
+//        self.tfPassword.leftView = leftPWView
+//        self.tfPassword.leftViewMode = UITextFieldViewMode.Always
+        self.tfName.addLeftView("icon_username")
+        self.tfPassword.addLeftView("icon_password")
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

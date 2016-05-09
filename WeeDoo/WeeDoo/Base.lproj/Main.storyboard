@@ -50,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBJ-IR-fxE">
-                                                <rect key="frame" x="38" y="316" width="300" height="300"/>
+                                                <rect key="frame" x="38" y="316" width="300" height="297"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email or phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JcJ-UO-Kmc" customClass="WDTextField" customModule="WeeDoo" customModuleProvider="target">
                                                         <rect key="frame" x="50" y="16" width="200" height="30"/>
@@ -117,6 +117,27 @@
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_weedoo_social" translatesAutoresizingMaskIntoConstraints="NO" id="Z0K-so-k6m">
                                                         <rect key="frame" x="50" y="247" width="200" height="30"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r31-t2-fKI">
+                                                        <rect key="frame" x="50" y="247" width="30" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="btnLoginTwitterPressed:" destination="boY-We-pMt" eventType="touchUpInside" id="P5h-oh-0nW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jE-V5-Gfa">
+                                                        <rect key="frame" x="220" y="247" width="30" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="btnLoginGooglePressed:" destination="boY-We-pMt" eventType="touchUpInside" id="C3Y-AX-83x"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-ec-Iqy">
+                                                        <rect key="frame" x="135" y="247" width="30" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="btnLoginFacebookPressed:" destination="boY-We-pMt" eventType="touchUpInside" id="TG3-ul-uBs"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.47761409440000002" blue="0.6617975962" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>

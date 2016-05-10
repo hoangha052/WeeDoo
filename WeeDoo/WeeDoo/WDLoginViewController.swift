@@ -58,8 +58,7 @@ class WDLoginViewController: UIViewController {
         let loginManager = FBSDKLoginManager ()
         FBSDKLoginManager.renewSystemCredentials { (accountResult : ACAccountCredentialRenewResult, error : NSError! ) -> Void in
             loginManager.logInWithReadPermissions(["email"], fromViewController: self, handler: { (loginResult : FBSDKLoginManagerLoginResult!, loginError : NSError!) -> Void in
-                if ((loginError) != nil)
-                {
+                if (loginError != nil) {
                     
                 } else if (loginResult.isCancelled)
                 {

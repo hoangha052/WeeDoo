@@ -17,6 +17,7 @@
 		679966B01CDA4AC000FF52C6 /* WeeDooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966AF1CDA4AC000FF52C6 /* WeeDooUITests.swift */; };
 		679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */; };
 		679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */; };
+		67A5E7CC1CE3834700CD8FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */; };
 		67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8D5301CDE5D910075F435 /* WDTextField.swift */; };
 		67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */; };
 		67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E0599A1CE0F2A800568F4E /* FBSDKLoginKit.framework */; };
@@ -59,6 +60,7 @@
 		679966B11CDA4AC000FF52C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDLoginViewController.swift; sourceTree = "<group>"; };
 		679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harlow Solid Italic Italic.ttf"; sourceTree = "<group>"; };
+		67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67C8D5301CDE5D910075F435 /* WDTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDTextField.swift; sourceTree = "<group>"; };
 		67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		67E0599A1CE0F2A800568F4E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				679966961CDA4ABF00FF52C6 /* Assets.xcassets */,
 				679966981CDA4ABF00FF52C6 /* LaunchScreen.storyboard */,
 				6799669B1CDA4ABF00FF52C6 /* Info.plist */,
+				67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */,
 				679966931CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld */,
 				67C8D5301CDE5D910075F435 /* WDTextField.swift */,
 			);
@@ -314,6 +317,7 @@
 			files = (
 				6799669A1CDA4ABF00FF52C6 /* LaunchScreen.storyboard in Resources */,
 				679966971CDA4ABF00FF52C6 /* Assets.xcassets in Resources */,
+				67A5E7CC1CE3834700CD8FF0 /* GoogleService-Info.plist in Resources */,
 				679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */,
 				679966921CDA4ABF00FF52C6 /* Main.storyboard in Resources */,
 			);

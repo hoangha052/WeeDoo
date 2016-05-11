@@ -9,8 +9,10 @@
 import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
+import Google
 
-class WDLoginViewController: UIViewController {
+
+class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
 
     @IBOutlet weak var tfName: WDTextField!
     
@@ -32,7 +34,13 @@ class WDLoginViewController: UIViewController {
 //        self.tfPassword.leftViewMode = UITextFieldViewMode.Always
         self.tfName.addLeftView("icon_username")
         self.tfPassword.addLeftView("icon_password")
+        var configureError: NSError?
+        GGLContext.sharedInstance().configureWithError(&configureError)
+        assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().clientID = "120548501506-h3lmob0l06ierfkmjg7j32isj3gt630v.apps.googleusercontent.com"
         
     }
 
@@ -74,7 +82,89 @@ class WDLoginViewController: UIViewController {
     
     
     @IBAction func btnLoginGooglePressed(sender: AnyObject) {
+        GIDSignIn.sharedInstance().signIn()
     }
+    // [START signin_handler]
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+        withError error: NSError!) {
+            if (error == nil) {
+                // Perform any operations on signed in user here.
+                let userId = user.userID                  // For client-side use only!
+                let idToken = user.authentication.idToken // Safe to send to the server
+                let fullName = user.profile.name
+                let givenName = user.profile.givenName
+                let familyName = user.profile.familyName
+                let email = user.profile.email
+                // [START_EXCLUDE]
+                NSNotificationCenter.defaultCenter().postNotificationName(
+                    "ToggleAuthUINotification",
+                    object: nil,
+                    userInfo: ["statusText": "Signed in user:\n\(fullName)"])
+                // [END_EXCLUDE]
+            } else {
+                print("\(error.localizedDescription)")
+                // [START_EXCLUDE silent]
+                NSNotificationCenter.defaultCenter().postNotificationName(
+                    "ToggleAuthUINotification", object: nil, userInfo: nil)
+                // [END_EXCLUDE]
+            }
+    }
+    // [END signin_handler]
+    
+    // [START disconnect_handler]
+    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+        withError error: NSError!) {
+            // Perform any operations when the user disconnects from app here.
+            // [START_EXCLUDE]
+            NSNotificationCenter.defaultCenter().postNotificationName(
+                "ToggleAuthUINotification",
+                object: nil,
+                userInfo: ["statusText": "User has disconnected."])
+            // [END_EXCLUDE]
+    }
+    func signIn(signIn: GIDSignIn!,
+        presentViewController viewController: UIViewController!) {
+            self.presentViewController(viewController, animated: true, completion: nil)
+            
+            print("Sign in presented")
+            
+    }
+    
+    // Dismiss the "Sign in with Google" view
+    func signIn(signIn: GIDSignIn!,
+        dismissViewController viewController: UIViewController!) {
+            self.dismissViewControllerAnimated(true, completion: nil)
+            
+            print("Sign in dismissed")
+    }
+    // [END disconnect_handler]
+    func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
+        
+    }
+    /*
+    - (void)signInWillDispatch:(GIDSignIn *)signIn error:(NSError *)error {
+    
+    }
+    // Present a view that prompts the user to sign in with Google
+    
+    - (void)signIn:(GIDSignIn *)signIn presentViewController:(UIViewController *)viewController
+    {
+    [self presentViewController:viewController animated:YES completion:nil];
+    }
+    // Dismiss the "Sign in with Google" view
+    
+    - (void)signIn:(GIDSignIn *)signIn dismissViewController:(UIViewController *)viewController {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    }
+    //completed sign In
+    
+    - (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user
+    withError:(NSError *)error {
+    //user signed in
+    //get user data in "user" (GIDGoogleUser object)
+    }
+*/
     /*
     // MARK: - Navigation
 

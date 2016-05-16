@@ -10,6 +10,7 @@ import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
 import Google
+import TwitterKit
 
 
 class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
@@ -59,6 +60,13 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     
     
     @IBAction func btnLoginTwitterPressed(sender: AnyObject) {
+        Twitter.sharedInstance().logInWithCompletion { session, error in
+            if (session != nil) {
+                print("signed in as \(session!.userName)");
+            } else {
+                print("error: \(error!.localizedDescription)");
+            }
+        }
     }
     
     

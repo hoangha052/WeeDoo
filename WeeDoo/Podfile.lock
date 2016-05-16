@@ -49,6 +49,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Fabric
   - Google/SignIn
   - IQKeyboardManager
   - MBProgressHUD

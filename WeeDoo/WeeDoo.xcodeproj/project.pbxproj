@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6706F2DE1CEA6F0500A5DDEB /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DA1CEA6F0500A5DDEB /* libAFNetworking.a */; };
+		6706F2DF1CEA6F0500A5DDEB /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DB1CEA6F0500A5DDEB /* libIQKeyboardManager.a */; };
+		6706F2E01CEA6F0500A5DDEB /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DC1CEA6F0500A5DDEB /* libMBProgressHUD.a */; };
+		6706F2E11CEA6F0500A5DDEB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DD1CEA6F0500A5DDEB /* libPods.a */; };
 		6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */; };
 		6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668E1CDA4ABF00FF52C6 /* ViewController.swift */; };
 		679966921CDA4ABF00FF52C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679966901CDA4ABF00FF52C6 /* Main.storyboard */; };
@@ -22,7 +26,6 @@
 		67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */; };
 		67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E0599A1CE0F2A800568F4E /* FBSDKLoginKit.framework */; };
 		67E0599F1CE0FFC900568F4E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E0599E1CE0FFC900568F4E /* FBSDKShareKit.framework */; };
-		E017101AC7F7203EE9B92363 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAAC86B7B0359E784C0F241 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 
 /* Begin PBXFileReference section */
 		2AAAC86B7B0359E784C0F241 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6706F2DA1CEA6F0500A5DDEB /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		6706F2DB1CEA6F0500A5DDEB /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
+		6706F2DC1CEA6F0500A5DDEB /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		6706F2DD1CEA6F0500A5DDEB /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		679966891CDA4ABF00FF52C6 /* WeeDoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeDoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6799668E1CDA4ABF00FF52C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,10 +81,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6706F2DE1CEA6F0500A5DDEB /* libAFNetworking.a in Frameworks */,
+				6706F2DF1CEA6F0500A5DDEB /* libIQKeyboardManager.a in Frameworks */,
+				6706F2E01CEA6F0500A5DDEB /* libMBProgressHUD.a in Frameworks */,
+				6706F2E11CEA6F0500A5DDEB /* libPods.a in Frameworks */,
 				67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */,
 				67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */,
 				67E0599F1CE0FFC900568F4E /* FBSDKShareKit.framework in Frameworks */,
-				E017101AC7F7203EE9B92363 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +213,10 @@
 		801E1445004D2BB26DE03487 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6706F2DA1CEA6F0500A5DDEB /* libAFNetworking.a */,
+				6706F2DB1CEA6F0500A5DDEB /* libIQKeyboardManager.a */,
+				6706F2DC1CEA6F0500A5DDEB /* libMBProgressHUD.a */,
+				6706F2DD1CEA6F0500A5DDEB /* libPods.a */,
 				2AAAC86B7B0359E784C0F241 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -548,6 +562,10 @@
 				INFOPLIST_FILE = WeeDoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainmaker-labs.WeeDoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -567,6 +585,10 @@
 				INFOPLIST_FILE = WeeDoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainmaker-labs.WeeDoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -4,7 +4,8 @@
 # use_frameworks!
 
 pod 'Google/SignIn'
-pod "AFNetworking"
+pod 'AFNetworking'
 pod 'IQKeyboardManager'
 pod 'MBProgressHUD'
+pod 'Fabric'
 pod 'TwitterKit'

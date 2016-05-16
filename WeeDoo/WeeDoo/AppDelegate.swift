@@ -10,7 +10,10 @@ import UIKit
 import CoreData
 import FBSDKCoreKit
 import FBSDKLoginKit
+import GIDSignIn
 import Google
+import TwitterKit
+import Fabric
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{
@@ -21,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        Twitter.sharedInstance().startWithConsumerKey("XZ3SyPlJSsEGkMNLk53ORcV76", consumerSecret: "sPvSJkgKsqTbQOj6NKn1WpnXYoSimHlSOkQGDGSiVqoGyI9YsZ")
+        Fabric.with([Twitter.self()])
 
 //        var configureError: NSError?
 //        GGLContext.sharedInstance().configureWithError(&configureError)

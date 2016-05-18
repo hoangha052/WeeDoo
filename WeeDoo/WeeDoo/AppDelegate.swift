@@ -10,10 +10,10 @@ import UIKit
 import CoreData
 import FBSDKCoreKit
 import FBSDKLoginKit
-import GIDSignIn
 import Google
 import TwitterKit
 import Fabric
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{

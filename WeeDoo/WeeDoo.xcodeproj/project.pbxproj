@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6706F2DE1CEA6F0500A5DDEB /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DA1CEA6F0500A5DDEB /* libAFNetworking.a */; };
-		6706F2DF1CEA6F0500A5DDEB /* libIQKeyboardManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DB1CEA6F0500A5DDEB /* libIQKeyboardManager.a */; };
-		6706F2E01CEA6F0500A5DDEB /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DC1CEA6F0500A5DDEB /* libMBProgressHUD.a */; };
-		6706F2E11CEA6F0500A5DDEB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6706F2DD1CEA6F0500A5DDEB /* libPods.a */; };
+		6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 674544691CEAB942008CAE68 /* libPods.a */; };
 		6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */; };
 		6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668E1CDA4ABF00FF52C6 /* ViewController.swift */; };
 		679966921CDA4ABF00FF52C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679966901CDA4ABF00FF52C6 /* Main.storyboard */; };
@@ -46,11 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2AAAC86B7B0359E784C0F241 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6706F2DA1CEA6F0500A5DDEB /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
-		6706F2DB1CEA6F0500A5DDEB /* libIQKeyboardManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libIQKeyboardManager.a; path = "Pods/../build/Debug-iphoneos/libIQKeyboardManager.a"; sourceTree = "<group>"; };
-		6706F2DC1CEA6F0500A5DDEB /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libMBProgressHUD.a"; sourceTree = "<group>"; };
-		6706F2DD1CEA6F0500A5DDEB /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		674544691CEAB942008CAE68 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeeDoo-Bridging-Header.h"; sourceTree = "<group>"; };
 		679966891CDA4ABF00FF52C6 /* WeeDoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeDoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6799668E1CDA4ABF00FF52C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,10 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6706F2DE1CEA6F0500A5DDEB /* libAFNetworking.a in Frameworks */,
-				6706F2DF1CEA6F0500A5DDEB /* libIQKeyboardManager.a in Frameworks */,
-				6706F2E01CEA6F0500A5DDEB /* libMBProgressHUD.a in Frameworks */,
-				6706F2E11CEA6F0500A5DDEB /* libPods.a in Frameworks */,
+				6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */,
 				67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */,
 				67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */,
 				67E0599F1CE0FFC900568F4E /* FBSDKShareKit.framework in Frameworks */,
@@ -171,6 +162,7 @@
 			children = (
 				6799668E1CDA4ABF00FF52C6 /* ViewController.swift */,
 				679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */,
+				6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -213,11 +205,7 @@
 		801E1445004D2BB26DE03487 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6706F2DA1CEA6F0500A5DDEB /* libAFNetworking.a */,
-				6706F2DB1CEA6F0500A5DDEB /* libIQKeyboardManager.a */,
-				6706F2DC1CEA6F0500A5DDEB /* libMBProgressHUD.a */,
-				6706F2DD1CEA6F0500A5DDEB /* libPods.a */,
-				2AAAC86B7B0359E784C0F241 /* libPods.a */,
+				674544691CEAB942008CAE68 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -390,6 +378,7 @@
 			files = (
 			);
 			inputPaths = (
+				"",
 			);
 			name = "Embed Pods Frameworks";
 			outputPaths = (
@@ -554,9 +543,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeeDoo/Framework",
+					"$(PROJECT_DIR)/WeeDoo/Pods",
 					"$(PROJECT_DIR)/WeeDoo",
 				);
 				INFOPLIST_FILE = WeeDoo/Info.plist;
@@ -566,8 +557,91 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"GGLSignIn\"",
+					"-l\"GIPNSURL+FIFE_external\"",
+					"-l\"GSDK_Overload_external\"",
+					"-l\"GTMOAuth2_external_external\"",
+					"-l\"GTMOAuth2_internal_external\"",
+					"-l\"GTMSessionFetcher_core_external\"",
+					"-l\"GTMSessionFetcher_full_external\"",
+					"-l\"GTMStackTrace_external\"",
+					"-l\"GTM_AddressBook_external\"",
+					"-l\"GTM_DebugUtils_external\"",
+					"-l\"GTM_GTMURLBuilder_external\"",
+					"-l\"GTM_KVO_external\"",
+					"-l\"GTM_NSData+zlib\"",
+					"-l\"GTM_NSDictionary+URLArguments_external\"",
+					"-l\"GTM_NSScannerJSON_external\"",
+					"-l\"GTM_NSStringHTML_external\"",
+					"-l\"GTM_NSStringXML_external\"",
+					"-l\"GTM_Regex_external\"",
+					"-l\"GTM_RoundedRectPath_external\"",
+					"-l\"GTM_StringEncoding_external\"",
+					"-l\"GTM_SystemVersion_external\"",
+					"-l\"GTM_UIFont+LineHeight_external\"",
+					"-l\"GTM_core_external\"",
+					"-l\"GTM_iPhone_external\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"OpenInChrome_external\"",
+					"-l\"ProtocolBuffers_external\"",
+					"-l\"SignIn_external\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainmaker-labs.WeeDoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeeDoo/WeeDoo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -577,9 +651,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeeDoo/Framework",
+					"$(PROJECT_DIR)/WeeDoo/Pods",
 					"$(PROJECT_DIR)/WeeDoo",
 				);
 				INFOPLIST_FILE = WeeDoo/Info.plist;
@@ -589,8 +665,90 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"GGLSignIn\"",
+					"-l\"GIPNSURL+FIFE_external\"",
+					"-l\"GSDK_Overload_external\"",
+					"-l\"GTMOAuth2_external_external\"",
+					"-l\"GTMOAuth2_internal_external\"",
+					"-l\"GTMSessionFetcher_core_external\"",
+					"-l\"GTMSessionFetcher_full_external\"",
+					"-l\"GTMStackTrace_external\"",
+					"-l\"GTM_AddressBook_external\"",
+					"-l\"GTM_DebugUtils_external\"",
+					"-l\"GTM_GTMURLBuilder_external\"",
+					"-l\"GTM_KVO_external\"",
+					"-l\"GTM_NSData+zlib\"",
+					"-l\"GTM_NSDictionary+URLArguments_external\"",
+					"-l\"GTM_NSScannerJSON_external\"",
+					"-l\"GTM_NSStringHTML_external\"",
+					"-l\"GTM_NSStringXML_external\"",
+					"-l\"GTM_Regex_external\"",
+					"-l\"GTM_RoundedRectPath_external\"",
+					"-l\"GTM_StringEncoding_external\"",
+					"-l\"GTM_SystemVersion_external\"",
+					"-l\"GTM_UIFont+LineHeight_external\"",
+					"-l\"GTM_core_external\"",
+					"-l\"GTM_iPhone_external\"",
+					"-l\"IQKeyboardManager\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"OpenInChrome_external\"",
+					"-l\"ProtocolBuffers_external\"",
+					"-l\"SignIn_external\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainmaker-labs.WeeDoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeeDoo/WeeDoo-Bridging-Header.h";
 			};
 			name = Release;
 		};

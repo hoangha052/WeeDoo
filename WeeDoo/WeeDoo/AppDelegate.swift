@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        Twitter.sharedInstance().startWithConsumerKey("XZ3SyPlJSsEGkMNLk53ORcV76", consumerSecret: "sPvSJkgKsqTbQOj6NKn1WpnXYoSimHlSOkQGDGSiVqoGyI9YsZ")
+        Twitter.sharedInstance().startWithConsumerKey("UDGmqNIDMMiFPoLssckK60q0R", consumerSecret: "BZbS9FEgANPlvZZihxETV3kNUq62qx1GmP1HozxxSWvX4CvdVE")
         Fabric.with([Twitter.self()])
 
 //        var configureError: NSError?

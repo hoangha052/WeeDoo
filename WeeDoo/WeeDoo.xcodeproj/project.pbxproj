@@ -23,6 +23,9 @@
 		67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */; };
 		67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E0599A1CE0F2A800568F4E /* FBSDKLoginKit.framework */; };
 		67E0599F1CE0FFC900568F4E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E0599E1CE0FFC900568F4E /* FBSDKShareKit.framework */; };
+		67EA45251CFB5E3E00C07D55 /* WDProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */; };
+		67EA452B1CFB659D00C07D55 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */; };
+		67EA452C1CFB659D00C07D55 /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		67E0599A1CE0F2A800568F4E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		67E0599E1CE0FFC900568F4E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectViewController.swift; sourceTree = "<group>"; };
+		67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
 		6EDD7805B0831E4440727341 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +130,8 @@
 		6799668B1CDA4ABF00FF52C6 /* WeeDoo */ = {
 			isa = PBXGroup;
 			children = (
+				67EA45271CFB656700C07D55 /* View */,
+				67EA45261CFB655E00C07D55 /* Common */,
 				67E059971CE0F28A00568F4E /* Framework */,
 				679966E51CDBA32E00FF52C6 /* Resource */,
 				679966BD1CDA4D6100FF52C6 /* Controller */,
@@ -163,6 +171,7 @@
 				6799668E1CDA4ABF00FF52C6 /* ViewController.swift */,
 				679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */,
 				6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */,
+				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -191,6 +200,30 @@
 				67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */,
 			);
 			path = Framework;
+			sourceTree = "<group>";
+		};
+		67EA45261CFB655E00C07D55 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		67EA45271CFB656700C07D55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67EA45281CFB657100C07D55 /* ViewCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		67EA45281CFB657100C07D55 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */,
+				67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */,
+			);
+			name = ViewCell;
 			sourceTree = "<group>";
 		};
 		6A3A3EC9D124F5A748050151 /* Pods */ = {
@@ -318,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6799669A1CDA4ABF00FF52C6 /* LaunchScreen.storyboard in Resources */,
+				67EA452C1CFB659D00C07D55 /* ProjectTableViewCell.xib in Resources */,
 				679966971CDA4ABF00FF52C6 /* Assets.xcassets in Resources */,
 				67A5E7CC1CE3834700CD8FF0 /* GoogleService-Info.plist in Resources */,
 				679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */,
@@ -396,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */,
+				67EA452B1CFB659D00C07D55 /* ProjectTableViewCell.swift in Sources */,
+				67EA45251CFB5E3E00C07D55 /* WDProjectViewController.swift in Sources */,
 				679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */,
 				67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */,
 				679966951CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld in Sources */,
@@ -551,7 +587,7 @@
 					"$(PROJECT_DIR)/WeeDoo",
 				);
 				INFOPLIST_FILE = WeeDoo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -642,6 +678,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeeDoo/WeeDoo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -659,7 +696,7 @@
 					"$(PROJECT_DIR)/WeeDoo",
 				);
 				INFOPLIST_FILE = WeeDoo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,6 +786,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainmaker-labs.WeeDoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeeDoo/WeeDoo-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

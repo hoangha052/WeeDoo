@@ -13,15 +13,20 @@ class WDProjectViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableview: UITableView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableview .registerNib((UINib (nibName: "ProjectTableViewCell", bundle: nil)), forCellReuseIdentifier: "TitleCell")
-        
+
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidLayoutSubviews() {
+        self.scrollView.contentSize = CGSizeMake(500, 500);
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,5 +52,10 @@ class WDProjectViewController: UIViewController, UITableViewDelegate, UITableVie
         // Pass the selected object to the new view controller.
     }
     */
+     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool
+    {
+        return true;
+    }
 
+    
 }

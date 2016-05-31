@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Task list-->
+        <scene sceneID="2V2-o7-GGp">
+            <objects>
+                <viewController id="zZx-S8-7wU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dfq-Y7-FLf"/>
+                        <viewControllerLayoutGuide type="bottom" id="IOd-vU-lWk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T3H-Wp-dde">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Task list" image="ic_pr_tabbar_task" selectedImage="ic_pr_tabbar_task_se" id="ovc-cv-RnJ">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77H-BG-RgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="600"/>
+        </scene>
+        <!--Infomations-->
+        <scene sceneID="HHG-WD-ZLT">
+            <objects>
+                <viewController id="uEN-rk-zSo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="py6-Bw-mxp"/>
+                        <viewControllerLayoutGuide type="bottom" id="6wB-li-9qE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lZo-S4-a3z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Infomations" image="ic_pr_tabbar_info" selectedImage="ic_pr_tabbar_info_se" id="T9Q-sS-P1F">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lx5-bP-Gth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="600"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7Jm-yC-AHZ">
+            <objects>
+                <tabBarController storyboardIdentifier="ProjectTabBarController" id="2Oa-fa-JgT" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="w4h-ye-Bjc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uEN-rk-zSo" kind="relationship" relationship="viewControllers" id="zK5-cH-8kj"/>
+                        <segue destination="zZx-S8-7wU" kind="relationship" relationship="viewControllers" id="DlP-EU-eFS"/>
+                        <segue destination="tKi-CJ-LkR" kind="relationship" relationship="viewControllers" id="vft-Ia-Ptg"/>
+                        <segue destination="C0J-x0-mvC" kind="relationship" relationship="viewControllers" id="RdN-p0-iEU"/>
+                        <segue destination="CjE-hv-jEM" kind="relationship" relationship="viewControllers" id="KXX-xA-zES"/>
+                        <segue destination="nOa-wn-foi" kind="relationship" relationship="viewControllers" id="bue-1d-M9A"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bx1-ST-cnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119" y="-270"/>
+        </scene>
+        <!--Task discusstion-->
+        <scene sceneID="kGc-1e-UHW">
+            <objects>
+                <viewController id="tKi-CJ-LkR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yvf-qw-zDZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="6XU-mb-8L9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2m-nu-UmU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="Task discusstion" image="ic_pr_tabbar_discussion" selectedImage="ic_pr_tabbar_discussion_se" id="6mB-DX-YFm">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kr0-u3-GT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="600"/>
+        </scene>
+        <!--Resource-->
+        <scene sceneID="YZ8-4j-rO5">
+            <objects>
+                <viewController id="C0J-x0-mvC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vob-Hf-G9J"/>
+                        <viewControllerLayoutGuide type="bottom" id="inA-s6-Hcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OFY-z0-XDZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="5" title="Resource" image="ic_pr_tabbar_resource" selectedImage="ic_pr_tabbar_resource_se" id="dSz-fd-bYg">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXl-jM-yqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="6"/>
+        </scene>
+        <!--Option-->
+        <scene sceneID="PJM-KD-PVT">
+            <objects>
+                <viewController id="CjE-hv-jEM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XcQ-9t-hbT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ild-wh-XAf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vgy-jr-SUp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="6" title="Option" image="ic_pr_tabbar_option" selectedImage="ic_pr_tabbar_option_se" id="HHL-z7-Qci">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VI7-Ui-nG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="547"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="cU9-sq-oHK">
+            <objects>
+                <viewController id="nOa-wn-foi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c4b-bj-47e"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xtb-gW-hr7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="srg-sg-EdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="5" title="Report" image="ic_pr_tabbar_report" selectedImage="ic_pr_tabbar_report_se" id="dkL-Aw-s5n">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Moq-Kj-3tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="529"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_pr_tabbar_discussion" width="29" height="26"/>
+        <image name="ic_pr_tabbar_discussion_se" width="28" height="25"/>
+        <image name="ic_pr_tabbar_info" width="28" height="28"/>
+        <image name="ic_pr_tabbar_info_se" width="29" height="29"/>
+        <image name="ic_pr_tabbar_option" width="27" height="27"/>
+        <image name="ic_pr_tabbar_option_se" width="27" height="27"/>
+        <image name="ic_pr_tabbar_report" width="19" height="26"/>
+        <image name="ic_pr_tabbar_report_se" width="19" height="26"/>
+        <image name="ic_pr_tabbar_resource" width="32" height="25"/>
+        <image name="ic_pr_tabbar_resource_se" width="32" height="25"/>
+        <image name="ic_pr_tabbar_task" width="21" height="24"/>
+        <image name="ic_pr_tabbar_task_se" width="21" height="24"/>
+    </resources>
+</document>

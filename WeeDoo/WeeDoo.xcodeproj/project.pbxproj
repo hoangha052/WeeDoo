@@ -26,6 +26,7 @@
 		67EA45251CFB5E3E00C07D55 /* WDProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */; };
 		67EA452B1CFB659D00C07D55 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */; };
 		67EA452C1CFB659D00C07D55 /* ProjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */; };
+		67EA45311CFCACBA00C07D55 /* Project.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67EA45301CFCACBA00C07D55 /* Project.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectViewController.swift; sourceTree = "<group>"; };
 		67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
+		67EA45301CFCACBA00C07D55 /* Project.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Project.storyboard; sourceTree = "<group>"; };
 		6EDD7805B0831E4440727341 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 				679966BD1CDA4D6100FF52C6 /* Controller */,
 				6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */,
 				679966901CDA4ABF00FF52C6 /* Main.storyboard */,
+				67EA45301CFCACBA00C07D55 /* Project.storyboard */,
 				679966961CDA4ABF00FF52C6 /* Assets.xcassets */,
 				679966981CDA4ABF00FF52C6 /* LaunchScreen.storyboard */,
 				6799669B1CDA4ABF00FF52C6 /* Info.plist */,
@@ -356,6 +359,7 @@
 				67A5E7CC1CE3834700CD8FF0 /* GoogleService-Info.plist in Resources */,
 				679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */,
 				679966921CDA4ABF00FF52C6 /* Main.storyboard in Resources */,
+				67EA45311CFCACBA00C07D55 /* Project.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

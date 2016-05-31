@@ -43,6 +43,15 @@ class WDProjectViewController: UIViewController, UITableViewDelegate, UITableVie
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Project", bundle: nil)
+        let newTabbar: UITabBarController = storyBoard.instantiateViewControllerWithIdentifier("ProjectTabBarController") as! UITabBarController
+        
+        self.presentViewController(newTabbar, animated: false) { 
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

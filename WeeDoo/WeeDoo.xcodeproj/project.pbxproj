@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 674544691CEAB942008CAE68 /* libPods.a */; };
+		675D2DA31CFF421C00F67BAE /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */; };
 		6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */; };
 		6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668E1CDA4ABF00FF52C6 /* ViewController.swift */; };
 		679966921CDA4ABF00FF52C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679966901CDA4ABF00FF52C6 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		674544691CEAB942008CAE68 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeeDoo-Bridging-Header.h"; sourceTree = "<group>"; };
+		675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		679966891CDA4ABF00FF52C6 /* WeeDoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeDoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6799668E1CDA4ABF00FF52C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */,
 				6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */,
 				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
+				675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */,
 				67EA452B1CFB659D00C07D55 /* ProjectTableViewCell.swift in Sources */,
 				67EA45251CFB5E3E00C07D55 /* WDProjectViewController.swift in Sources */,
+				675D2DA31CFF421C00F67BAE /* BaseNavigationViewController.swift in Sources */,
 				679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */,
 				67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */,
 				679966951CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld in Sources */,

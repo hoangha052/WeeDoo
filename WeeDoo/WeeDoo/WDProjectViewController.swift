@@ -19,13 +19,17 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
         super.viewDidLoad()
 
         self.addNavigation("Project", titleLeftButton:"", titleRightButton: "Done")
+        
+//        self.navigationController?.navigationBarHidden = true;
         self.tableview .registerNib((UINib (nibName: "ProjectTableViewCell", bundle: nil)), forCellReuseIdentifier: "TitleCell")
+        
 
         // Do any additional setup after loading the view.
     }
     
     override func viewDidLayoutSubviews() {
-        self.scrollView.contentSize = CGSizeMake(500, 500);
+        self.scrollView.contentSize = CGSizeMake(500, 400);
+        self.scrollView.scrollsToTop = true;
     }
     
     override func didReceiveMemoryWarning() {

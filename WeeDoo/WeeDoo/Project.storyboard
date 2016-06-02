@@ -28,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77H-BG-RgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-139" y="600"/>
+            <point key="canvasLocation" x="-575" y="536"/>
         </scene>
         <!--Infomations-->
         <scene sceneID="HHG-WD-ZLT">
@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lx5-bP-Gth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-493" y="600"/>
+            <point key="canvasLocation" x="-923" y="536"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Jm-yC-AHZ">
@@ -69,9 +69,9 @@
                         <segue destination="uEN-rk-zSo" kind="relationship" relationship="viewControllers" id="zK5-cH-8kj"/>
                         <segue destination="zZx-S8-7wU" kind="relationship" relationship="viewControllers" id="DlP-EU-eFS"/>
                         <segue destination="tKi-CJ-LkR" kind="relationship" relationship="viewControllers" id="vft-Ia-Ptg"/>
+                        <segue destination="nOa-wn-foi" kind="relationship" relationship="viewControllers" id="bue-1d-M9A"/>
                         <segue destination="C0J-x0-mvC" kind="relationship" relationship="viewControllers" id="RdN-p0-iEU"/>
                         <segue destination="CjE-hv-jEM" kind="relationship" relationship="viewControllers" id="KXX-xA-zES"/>
-                        <segue destination="nOa-wn-foi" kind="relationship" relationship="viewControllers" id="bue-1d-M9A"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bx1-ST-cnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kr0-u3-GT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202" y="600"/>
+            <point key="canvasLocation" x="-278" y="546"/>
         </scene>
         <!--Resource-->
         <scene sceneID="YZ8-4j-rO5">
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXl-jM-yqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="6"/>
+            <point key="canvasLocation" x="407" y="702"/>
         </scene>
         <!--Option-->
         <scene sceneID="PJM-KD-PVT">
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VI7-Ui-nG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="547"/>
+            <point key="canvasLocation" x="969" y="631"/>
         </scene>
         <!--Report-->
         <scene sceneID="cU9-sq-oHK">
@@ -166,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="5" title="Report" image="ic_pr_tabbar_report" selectedImage="ic_pr_tabbar_report_se" id="dkL-Aw-s5n">
+                    <tabBarItem key="tabBarItem" tag="4" title="Report" image="ic_pr_tabbar_report" selectedImage="ic_pr_tabbar_report_se" id="dkL-Aw-s5n">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
@@ -176,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Moq-Kj-3tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="529"/>
+            <point key="canvasLocation" x="-12" y="546"/>
         </scene>
     </scenes>
     <resources>

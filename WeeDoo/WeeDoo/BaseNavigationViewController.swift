@@ -40,7 +40,7 @@ class BaseNavigationViewController: UIViewController {
 //        button.setImage(UIImage(named: imageName),
 //                        forState: UIControlState.Normal)
         button.addTarget(self, action:#selector(BaseNavigationViewController.rightButtonClicked), forControlEvents: UIControlEvents.TouchUpInside)
-//        button.frame = buttonFrame
+        button.frame = CGRectMake(0, 0, 50, 50)
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         let attributedTitle = NSAttributedString(string: titleLeftButton as String, attributes:
             [NSForegroundColorAttributeName : UIColor.whiteColor(),
@@ -60,7 +60,7 @@ class BaseNavigationViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+//    
     
     func addNavRightUIBarButton(buttonName:String, selector:Selector, target:AnyObject?, buttonFrame:CGRect, buttonTextColor:UIColor){
         // Right Bar Button

@@ -28,10 +28,10 @@ class BaseNavigationViewController: UIViewController {
         let rightButton:UIButton = UIButton(type: UIButtonType.Custom)
         rightButton.setAttributedTitle(NSAttributedString(string: titleRightButton as String, attributes:
             [NSForegroundColorAttributeName : UIColor.whiteColor(),
-                NSFontAttributeName:UIFont.systemFontSize()]),
+                NSFontAttributeName:UIFont.systemFontOfSize(17.0)]),
                                        forState: UIControlState.Normal)
         rightButton.addTarget(self, action:#selector(BaseNavigationViewController.rightButtonClicked), forControlEvents: UIControlEvents.TouchUpInside)
-//        rightButton.frame = CGRectMake(0, 0, , <#T##height: CGFloat##CGFloat#>)
+        rightButton.frame = CGRectMake(0, 0, 50, 50)
         rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Right
         let rightBarButton = UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = rightBarButton
@@ -44,7 +44,7 @@ class BaseNavigationViewController: UIViewController {
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         let attributedTitle = NSAttributedString(string: titleLeftButton as String, attributes:
             [NSForegroundColorAttributeName : UIColor.whiteColor(),
-                NSFontAttributeName:UIFont.systemFontSize()])
+                NSFontAttributeName:UIFont.systemFontOfSize(17.0)])
             
         button.setAttributedTitle(attributedTitle, forState: UIControlState.Normal)
         let lefBarButton = UIBarButtonItem(customView: button)

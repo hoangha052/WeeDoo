@@ -9,7 +9,7 @@
 import UIKit
 
 
-class WDProjectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -18,6 +18,7 @@ class WDProjectViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.addNavigation("Project", titleLeftButton:"", titleRightButton: "Done")
         self.tableview .registerNib((UINib (nibName: "ProjectTableViewCell", bundle: nil)), forCellReuseIdentifier: "TitleCell")
 
         // Do any additional setup after loading the view.
@@ -31,6 +32,7 @@ class WDProjectViewController: UIViewController, UITableViewDelegate, UITableVie
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     
     //MARK - UITableView Delegate
     

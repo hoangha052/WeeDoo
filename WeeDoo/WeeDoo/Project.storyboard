@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Task list-->
+        <!--Project Task List View Controller-->
         <scene sceneID="2V2-o7-GGp">
             <objects>
-                <viewController id="zZx-S8-7wU" sceneMemberID="viewController">
+                <viewController id="zZx-S8-7wU" customClass="WDProjectTaskListViewController" customModule="WeeDoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dfq-Y7-FLf"/>
                         <viewControllerLayoutGuide type="bottom" id="IOd-vU-lWk"/>
@@ -18,22 +18,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Task list" image="ic_pr_tabbar_task" selectedImage="ic_pr_tabbar_task_se" id="ovc-cv-RnJ">
+                    <navigationItem key="navigationItem" id="twe-um-AeX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77H-BG-RgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="1462"/>
+        </scene>
+        <!--Informations-->
+        <scene sceneID="SEM-nf-0fe">
+            <objects>
+                <navigationController id="SNZ-pQ-sL5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Informations" image="ic_pr_tabbar_info" selectedImage="ic_pr_tabbar_info_se" id="iiV-Oo-GNi">
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
                                 <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="77H-BG-RgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AlR-Uo-Tmp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uEN-rk-zSo" kind="relationship" relationship="rootViewController" id="uJM-JF-oUt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RG5-qa-ECw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575" y="536"/>
+            <point key="canvasLocation" x="-1130" y="526"/>
         </scene>
-        <!--Infomations-->
+        <!--Project Info View Controller-->
         <scene sceneID="HHG-WD-ZLT">
             <objects>
-                <viewController id="uEN-rk-zSo" sceneMemberID="viewController">
+                <viewController id="uEN-rk-zSo" customClass="WDProjectInfoViewController" customModule="WeeDoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="py6-Bw-mxp"/>
                         <viewControllerLayoutGuide type="bottom" id="6wB-li-9qE"/>
@@ -43,22 +60,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Infomations" image="ic_pr_tabbar_info" selectedImage="ic_pr_tabbar_info_se" id="T9Q-sS-P1F">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.0" green="0.68235294117647061" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="zRC-x8-8aO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lx5-bP-Gth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-923" y="536"/>
+            <point key="canvasLocation" x="-1130" y="1454"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Jm-yC-AHZ">
             <objects>
                 <tabBarController storyboardIdentifier="ProjectTabBarController" id="2Oa-fa-JgT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2it-Ve-Bsg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="w4h-ye-Bjc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -66,22 +78,45 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="uEN-rk-zSo" kind="relationship" relationship="viewControllers" id="zK5-cH-8kj"/>
-                        <segue destination="zZx-S8-7wU" kind="relationship" relationship="viewControllers" id="DlP-EU-eFS"/>
-                        <segue destination="tKi-CJ-LkR" kind="relationship" relationship="viewControllers" id="vft-Ia-Ptg"/>
-                        <segue destination="nOa-wn-foi" kind="relationship" relationship="viewControllers" id="bue-1d-M9A"/>
-                        <segue destination="C0J-x0-mvC" kind="relationship" relationship="viewControllers" id="RdN-p0-iEU"/>
-                        <segue destination="CjE-hv-jEM" kind="relationship" relationship="viewControllers" id="KXX-xA-zES"/>
+                        <segue destination="SNZ-pQ-sL5" kind="relationship" relationship="viewControllers" id="ezG-t6-cJg"/>
+                        <segue destination="JyY-B2-NiA" kind="relationship" relationship="viewControllers" id="VDL-D4-LNy"/>
+                        <segue destination="u5v-vr-ulD" kind="relationship" relationship="viewControllers" id="Vfx-95-Imm"/>
+                        <segue destination="0uA-iH-Ltg" kind="relationship" relationship="viewControllers" id="hx7-PD-jPg"/>
+                        <segue destination="oQI-If-Zh6" kind="relationship" relationship="viewControllers" id="opQ-5N-Ejf"/>
+                        <segue destination="MJw-28-qLw" kind="relationship" relationship="viewControllers" id="Iz5-K0-aym"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bx1-ST-cnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-119" y="-270"/>
         </scene>
+        <!--Task list-->
+        <scene sceneID="c6T-hY-mvX">
+            <objects>
+                <navigationController id="JyY-B2-NiA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Task list" image="ic_pr_tabbar_task" selectedImage="ic_pr_tabbar_task_se" id="AfG-iv-HOA">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294120000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rku-S4-rgU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zZx-S8-7wU" kind="relationship" relationship="rootViewController" id="Irf-Li-NnI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMC-qp-D5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="526"/>
+        </scene>
         <!--Task discusstion-->
         <scene sceneID="kGc-1e-UHW">
             <objects>
-                <viewController id="tKi-CJ-LkR" sceneMemberID="viewController">
+                <viewController id="tKi-CJ-LkR" customClass="WDProjectTaskDiscussViewController" customModule="WeeDoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yvf-qw-zDZ"/>
                         <viewControllerLayoutGuide type="bottom" id="6XU-mb-8L9"/>
@@ -98,15 +133,16 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="DDn-dL-qqA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kr0-u3-GT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-278" y="546"/>
+            <point key="canvasLocation" x="-368" y="1462"/>
         </scene>
         <!--Resource-->
         <scene sceneID="YZ8-4j-rO5">
             <objects>
-                <viewController id="C0J-x0-mvC" sceneMemberID="viewController">
+                <viewController id="C0J-x0-mvC" customClass="WDProjectResourceViewController" customModule="WeeDoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vob-Hf-G9J"/>
                         <viewControllerLayoutGuide type="bottom" id="inA-s6-Hcd"/>
@@ -123,15 +159,16 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="4wd-h2-WcK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXl-jM-yqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="702"/>
+            <point key="canvasLocation" x="422" y="1470"/>
         </scene>
         <!--Option-->
         <scene sceneID="PJM-KD-PVT">
             <objects>
-                <viewController id="CjE-hv-jEM" sceneMemberID="viewController">
+                <viewController id="CjE-hv-jEM" customClass="WDProjectOptionViewController" customModule="WeeDoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XcQ-9t-hbT"/>
                         <viewControllerLayoutGuide type="bottom" id="Ild-wh-XAf"/>
@@ -148,15 +185,16 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="d6g-sC-zgx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VI7-Ui-nG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="631"/>
+            <point key="canvasLocation" x="845" y="1470"/>
         </scene>
         <!--Report-->
         <scene sceneID="cU9-sq-oHK">
             <objects>
-                <viewController id="nOa-wn-foi" sceneMemberID="viewController">
+                <viewController id="nOa-wn-foi" customClass="WDProjectReportViewController" customModule="WeeDoo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c4b-bj-47e"/>
                         <viewControllerLayoutGuide type="bottom" id="Xtb-gW-hr7"/>
@@ -173,10 +211,103 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="D32-cb-AoL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Moq-Kj-3tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="546"/>
+            <point key="canvasLocation" x="32" y="1462"/>
+        </scene>
+        <!--Task discusstion-->
+        <scene sceneID="7vO-O6-qj9">
+            <objects>
+                <navigationController id="u5v-vr-ulD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" title="Task discusstion" image="ic_pr_tabbar_discussion" selectedImage="ic_pr_tabbar_discussion_se" id="EMr-PM-UFX">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294120000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HhP-GC-UTf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tKi-CJ-LkR" kind="relationship" relationship="rootViewController" id="16d-rv-FAj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGy-SJ-BnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="519"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="C0S-yW-X75">
+            <objects>
+                <navigationController id="0uA-iH-Ltg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Report" image="ic_pr_tabbar_report" selectedImage="ic_pr_tabbar_report_se" id="4of-AD-5Ki">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294120000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uko-pK-yPg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nOa-wn-foi" kind="relationship" relationship="rootViewController" id="vVW-3F-5Uq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OT8-01-3Sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="526"/>
+        </scene>
+        <!--Resource-->
+        <scene sceneID="Okt-Oc-90B">
+            <objects>
+                <navigationController id="oQI-If-Zh6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="5" title="Resource" image="ic_pr_tabbar_resource" selectedImage="ic_pr_tabbar_resource_se" id="uFg-90-08L">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294120000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pKJ-bE-ovf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C0J-x0-mvC" kind="relationship" relationship="rootViewController" id="TQY-wh-Yk5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0G-Ap-GKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="526"/>
+        </scene>
+        <!--Option-->
+        <scene sceneID="M5O-ei-sEe">
+            <objects>
+                <navigationController id="MJw-28-qLw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="6" title="Option" image="ic_pr_tabbar_option" selectedImage="ic_pr_tabbar_option_se" id="3ki-5a-OEU">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.0" green="0.68235294120000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BE2-Ox-Dp5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CjE-hv-jEM" kind="relationship" relationship="rootViewController" id="7R0-8H-LBl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biy-sQ-Pt2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845" y="519"/>
         </scene>
     </scenes>
     <resources>

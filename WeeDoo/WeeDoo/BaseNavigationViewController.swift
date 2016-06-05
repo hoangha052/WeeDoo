@@ -17,13 +17,12 @@ class BaseNavigationViewController: UIViewController {
     }
 
     func addNavigation(titleView:NSString ,titleLeftButton: NSString, titleRightButton:NSString) -> Void {
-        
+        self.navigationController?.navigationBarHidden = false
         self.navigationItem.title = titleView as String
-//        self.navigationController?.navigationBar.titleTextAttributes = [
-//            NSForegroundColorAttributeName: self.mainThemeColor,
-//            NSFontAttributeName: GlobalConstants.Resources.FontOpenSansSemibold.getFont(17.0)
-        
-//        ]
+        self.navigationController?.navigationBar.barTintColor = UIColor(red:  4.0/255.0, green: 102/255.0, blue: 89/255.0, alpha: 100.0/100.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName:UIFont.systemFontOfSize(18.0)]
         
         let rightButton:UIButton = UIButton(type: UIButtonType.Custom)
         rightButton.setAttributedTitle(NSAttributedString(string: titleRightButton as String, attributes:

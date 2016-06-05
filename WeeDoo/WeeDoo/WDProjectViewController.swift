@@ -19,8 +19,6 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
         super.viewDidLoad()
 
         self.addNavigation("Project", titleLeftButton:"", titleRightButton: "Done")
-        
-//        self.navigationController?.navigationBarHidden = true;
         self.tableview .registerNib((UINib (nibName: "ProjectTableViewCell", bundle: nil)), forCellReuseIdentifier: "TitleCell")
         
 
@@ -28,7 +26,7 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
     }
     
     override func viewDidLayoutSubviews() {
-        self.scrollView.contentSize = CGSizeMake(500, 400);
+        self.scrollView.contentSize = CGSizeMake(490, 400);
         self.scrollView.scrollsToTop = true;
     }
     
@@ -41,11 +39,15 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
     //MARK - UITableView Delegate
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
+        return 15;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : ProjectTableViewCell = tableView.dequeueReusableCellWithIdentifier("TitleCell") as! ProjectTableViewCell
+        if indexPath.row != 0
+        {
+            cell.backgroundColor = UIColor.clearColor()
+        }
         
         return cell
     }

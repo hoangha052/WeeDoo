@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672B43F41D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F31D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift */; };
+		672B43F61D047EB500FC31FC /* WDProjectInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F51D047EB500FC31FC /* WDProjectInfoViewController.swift */; };
+		672B43F81D0481E100FC31FC /* WDProjectTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F71D0481E100FC31FC /* WDProjectTaskListViewController.swift */; };
+		672B43FA1D04824400FC31FC /* WDProjectTaskDiscussViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F91D04824400FC31FC /* WDProjectTaskDiscussViewController.swift */; };
+		672B43FC1D04828D00FC31FC /* WDProjectReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43FB1D04828D00FC31FC /* WDProjectReportViewController.swift */; };
+		672B43FE1D0482B300FC31FC /* WDProjectOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43FD1D0482B300FC31FC /* WDProjectOptionViewController.swift */; };
+		672B44001D0483BB00FC31FC /* WDProjectResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43FF1D0483BB00FC31FC /* WDProjectResourceViewController.swift */; };
+		672B44031D04867B00FC31FC /* WDMainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B44021D04867B00FC31FC /* WDMainNavigationViewController.swift */; };
+		672B44051D0489DF00FC31FC /* WDMessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B44041D0489DF00FC31FC /* WDMessengerViewController.swift */; };
+		672B44071D0489F700FC31FC /* WDRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B44061D0489F700FC31FC /* WDRequestViewController.swift */; };
+		672B44091D048A1700FC31FC /* WDNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B44081D048A1700FC31FC /* WDNotificationViewController.swift */; };
+		672B440B1D048A3C00FC31FC /* WDNewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B440A1D048A3C00FC31FC /* WDNewFeedViewController.swift */; };
+		672B440D1D048D9C00FC31FC /* WDMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B440C1D048D9C00FC31FC /* WDMoreViewController.swift */; };
 		6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 674544691CEAB942008CAE68 /* libPods.a */; };
 		675D2DA31CFF421C00F67BAE /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */; };
 		6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */; };
@@ -48,6 +61,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		672B43F31D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDBaseProjectDetailViewController.swift; sourceTree = "<group>"; };
+		672B43F51D047EB500FC31FC /* WDProjectInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectInfoViewController.swift; sourceTree = "<group>"; };
+		672B43F71D0481E100FC31FC /* WDProjectTaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectTaskListViewController.swift; sourceTree = "<group>"; };
+		672B43F91D04824400FC31FC /* WDProjectTaskDiscussViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectTaskDiscussViewController.swift; sourceTree = "<group>"; };
+		672B43FB1D04828D00FC31FC /* WDProjectReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectReportViewController.swift; sourceTree = "<group>"; };
+		672B43FD1D0482B300FC31FC /* WDProjectOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectOptionViewController.swift; sourceTree = "<group>"; };
+		672B43FF1D0483BB00FC31FC /* WDProjectResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectResourceViewController.swift; sourceTree = "<group>"; };
+		672B44021D04867B00FC31FC /* WDMainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDMainNavigationViewController.swift; sourceTree = "<group>"; };
+		672B44041D0489DF00FC31FC /* WDMessengerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDMessengerViewController.swift; sourceTree = "<group>"; };
+		672B44061D0489F700FC31FC /* WDRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDRequestViewController.swift; sourceTree = "<group>"; };
+		672B44081D048A1700FC31FC /* WDNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDNotificationViewController.swift; sourceTree = "<group>"; };
+		672B440A1D048A3C00FC31FC /* WDNewFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDNewFeedViewController.swift; sourceTree = "<group>"; };
+		672B440C1D048D9C00FC31FC /* WDMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDMoreViewController.swift; sourceTree = "<group>"; };
 		674544691CEAB942008CAE68 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeeDoo-Bridging-Header.h"; sourceTree = "<group>"; };
 		675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +135,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		672B43F21D047D8000FC31FC /* ProjectDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				672B43F31D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift */,
+				672B43F51D047EB500FC31FC /* WDProjectInfoViewController.swift */,
+				672B43F71D0481E100FC31FC /* WDProjectTaskListViewController.swift */,
+				672B43F91D04824400FC31FC /* WDProjectTaskDiscussViewController.swift */,
+				672B43FB1D04828D00FC31FC /* WDProjectReportViewController.swift */,
+				672B43FD1D0482B300FC31FC /* WDProjectOptionViewController.swift */,
+				672B43FF1D0483BB00FC31FC /* WDProjectResourceViewController.swift */,
+			);
+			name = ProjectDetailViewController;
+			sourceTree = "<group>";
+		};
+		672B44011D04862400FC31FC /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
+				672B44021D04867B00FC31FC /* WDMainNavigationViewController.swift */,
+				672B44041D0489DF00FC31FC /* WDMessengerViewController.swift */,
+				672B44061D0489F700FC31FC /* WDRequestViewController.swift */,
+				672B44081D048A1700FC31FC /* WDNotificationViewController.swift */,
+				672B440A1D048A3C00FC31FC /* WDNewFeedViewController.swift */,
+				672B440C1D048D9C00FC31FC /* WDMoreViewController.swift */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
 		679966801CDA4ABF00FF52C6 = {
 			isa = PBXGroup;
 			children = (
@@ -173,10 +227,11 @@
 		679966BD1CDA4D6100FF52C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				672B44011D04862400FC31FC /* MainViewController */,
+				672B43F21D047D8000FC31FC /* ProjectDetailViewController */,
 				6799668E1CDA4ABF00FF52C6 /* ViewController.swift */,
 				679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */,
 				6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */,
-				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
 				675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */,
 			);
 			name = Controller;
@@ -436,14 +491,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672B440B1D048A3C00FC31FC /* WDNewFeedViewController.swift in Sources */,
+				672B43FE1D0482B300FC31FC /* WDProjectOptionViewController.swift in Sources */,
+				672B44031D04867B00FC31FC /* WDMainNavigationViewController.swift in Sources */,
 				6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */,
+				672B43F41D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift in Sources */,
 				67EA452B1CFB659D00C07D55 /* ProjectTableViewCell.swift in Sources */,
+				672B43F81D0481E100FC31FC /* WDProjectTaskListViewController.swift in Sources */,
 				67EA45251CFB5E3E00C07D55 /* WDProjectViewController.swift in Sources */,
+				672B43FA1D04824400FC31FC /* WDProjectTaskDiscussViewController.swift in Sources */,
 				675D2DA31CFF421C00F67BAE /* BaseNavigationViewController.swift in Sources */,
+				672B44001D0483BB00FC31FC /* WDProjectResourceViewController.swift in Sources */,
 				679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */,
+				672B43FC1D04828D00FC31FC /* WDProjectReportViewController.swift in Sources */,
 				67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */,
+				672B43F61D047EB500FC31FC /* WDProjectInfoViewController.swift in Sources */,
+				672B44051D0489DF00FC31FC /* WDMessengerViewController.swift in Sources */,
+				672B44091D048A1700FC31FC /* WDNotificationViewController.swift in Sources */,
 				679966951CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld in Sources */,
 				6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */,
+				672B44071D0489F700FC31FC /* WDRequestViewController.swift in Sources */,
+				672B440D1D048D9C00FC31FC /* WDMoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A20799563F57D2F67B28DD4 /* Pods_WeeDoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC8F3FD4D684EFAA5E443F /* Pods_WeeDoo.framework */; };
 		672B43F41D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F31D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift */; };
 		672B43F61D047EB500FC31FC /* WDProjectInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F51D047EB500FC31FC /* WDProjectInfoViewController.swift */; };
 		672B43F81D0481E100FC31FC /* WDProjectTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F71D0481E100FC31FC /* WDProjectTaskListViewController.swift */; };
@@ -20,7 +21,6 @@
 		672B44091D048A1700FC31FC /* WDNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B44081D048A1700FC31FC /* WDNotificationViewController.swift */; };
 		672B440B1D048A3C00FC31FC /* WDNewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B440A1D048A3C00FC31FC /* WDNewFeedViewController.swift */; };
 		672B440D1D048D9C00FC31FC /* WDMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B440C1D048D9C00FC31FC /* WDMoreViewController.swift */; };
-		6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 674544691CEAB942008CAE68 /* libPods.a */; };
 		675D2DA31CFF421C00F67BAE /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */; };
 		6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */; };
 		6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668E1CDA4ABF00FF52C6 /* ViewController.swift */; };
@@ -61,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56BC8F3FD4D684EFAA5E443F /* Pods_WeeDoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeeDoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		672B43F31D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDBaseProjectDetailViewController.swift; sourceTree = "<group>"; };
 		672B43F51D047EB500FC31FC /* WDProjectInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectInfoViewController.swift; sourceTree = "<group>"; };
 		672B43F71D0481E100FC31FC /* WDProjectTaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDProjectTaskListViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +103,8 @@
 		67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
 		67EA45301CFCACBA00C07D55 /* Project.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Project.storyboard; sourceTree = "<group>"; };
-		6EDD7805B0831E4440727341 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A2DF8F7AF161760358E9CACB /* Pods-WeeDoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeeDoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo.release.xcconfig"; sourceTree = "<group>"; };
+		AB3B2D7B3A644ECD3550DD7B /* Pods-WeeDoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeeDoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +112,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */,
 				67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */,
 				67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */,
 				67E0599F1CE0FFC900568F4E /* FBSDKShareKit.framework in Frameworks */,
+				2A20799563F57D2F67B28DD4 /* Pods_WeeDoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,8 +171,8 @@
 				679966A31CDA4AC000FF52C6 /* WeeDooTests */,
 				679966AE1CDA4AC000FF52C6 /* WeeDooUITests */,
 				6799668A1CDA4ABF00FF52C6 /* Products */,
-				6A3A3EC9D124F5A748050151 /* Pods */,
 				801E1445004D2BB26DE03487 /* Frameworks */,
+				7FC2322507F2CF11D087458C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,11 +288,11 @@
 			name = ViewCell;
 			sourceTree = "<group>";
 		};
-		6A3A3EC9D124F5A748050151 /* Pods */ = {
+		7FC2322507F2CF11D087458C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */,
-				6EDD7805B0831E4440727341 /* Pods.release.xcconfig */,
+				AB3B2D7B3A644ECD3550DD7B /* Pods-WeeDoo.debug.xcconfig */,
+				A2DF8F7AF161760358E9CACB /* Pods-WeeDoo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -300,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				674544691CEAB942008CAE68 /* libPods.a */,
+				56BC8F3FD4D684EFAA5E443F /* Pods_WeeDoo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,12 +313,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 679966B41CDA4AC000FF52C6 /* Build configuration list for PBXNativeTarget "WeeDoo" */;
 			buildPhases = (
-				538E1AA478D0BA776E0AE64C /* Check Pods Manifest.lock */,
+				6708AF065B4401756A3B1D2B /* [CP] Check Pods Manifest.lock */,
 				679966851CDA4ABF00FF52C6 /* Sources */,
 				679966861CDA4ABF00FF52C6 /* Frameworks */,
 				679966871CDA4ABF00FF52C6 /* Resources */,
-				E6D28DA7B978B3D2400C18A3 /* Embed Pods Frameworks */,
-				CA8DFA3C51A28BFC87F38DEB /* Copy Pods Resources */,
+				49D7FC1915436EC7B6A62853 /* [CP] Embed Pods Frameworks */,
+				44BA67AEEAB33CDFC4698260 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,50 +440,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		538E1AA478D0BA776E0AE64C /* Check Pods Manifest.lock */ = {
+		44BA67AEEAB33CDFC4698260 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49D7FC1915436EC7B6A62853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6708AF065B4401756A3B1D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CA8DFA3C51A28BFC87F38DEB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6D28DA7B978B3D2400C18A3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"",
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -651,7 +652,7 @@
 		};
 		679966B51CDA4AC000FF52C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = AB3B2D7B3A644ECD3550DD7B /* Pods-WeeDoo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -760,7 +761,7 @@
 		};
 		679966B61CDA4AC000FF52C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EDD7805B0831E4440727341 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A2DF8F7AF161760358E9CACB /* Pods-WeeDoo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;

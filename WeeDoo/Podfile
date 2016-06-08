@@ -3,9 +3,15 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target 'WeeDoo' do
+pod 'Alamofire', '~> 3.4'
 pod 'Google/SignIn'
-pod 'AFNetworking'
 pod 'IQKeyboardManager'
 pod 'MBProgressHUD'
 pod 'Fabric'
 pod 'TwitterKit'
+end

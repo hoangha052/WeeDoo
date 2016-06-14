@@ -58,6 +58,7 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     
     
     @IBAction func btnSignUpPressed(sender: AnyObject) {
+        self.performSegueWithIdentifier("RegisterSegue", sender: nil)
     }
     
     

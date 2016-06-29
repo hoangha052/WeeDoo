@@ -8,8 +8,11 @@
 
 import UIKit
 
-class WDProjectInfoViewController: WDBaseProjectDetailViewController {
+class WDProjectInfoViewController: WDBaseProjectDetailViewController,UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblValue: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +26,21 @@ class WDProjectInfoViewController: WDBaseProjectDetailViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+//MARK:UITableViewDelegate
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 9;
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell : ProjectInforTableViewCell = tableView.dequeueReusableCellWithIdentifier("InforCell") as! ProjectInforTableViewCell
+        if indexPath.row != 0
+        {
+            cell.backgroundColor = UIColor.clearColor()
+        }
+        
+        return cell
+        
+    }
     /*
     // MARK: - Navigation
 

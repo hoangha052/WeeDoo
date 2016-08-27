@@ -9,7 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>IQKeyboardManager.xcscheme</key>
+		<key>CVCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>37C76CD246D637B8E4C586284A0D96B2</key>
+		<key>1520003FEBEC114D6C84F832AFEDB994</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2B295FECBD715487218EA29101A794CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5275C974D637DF74FA6CCF9E1840FC9</key>
+		<key>BA14B622689766F6B8A4F42FD9DE552F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

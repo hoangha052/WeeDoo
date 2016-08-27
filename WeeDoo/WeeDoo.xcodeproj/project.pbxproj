@@ -34,6 +34,7 @@
 		679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */; };
 		679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */; };
 		67A5E7CC1CE3834700CD8FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */; };
+		67C12B221D6CA16A008F8DC2 /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C12B211D6CA16A008F8DC2 /* CreateProjectViewController.swift */; };
 		67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8D5301CDE5D910075F435 /* WDTextField.swift */; };
 		67C90ADB1D1062A300F1CDCB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C90ADA1D1062A300F1CDCB /* RegisterViewController.swift */; };
 		67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */; };
@@ -96,6 +97,7 @@
 		679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDLoginViewController.swift; sourceTree = "<group>"; };
 		679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harlow Solid Italic Italic.ttf"; sourceTree = "<group>"; };
 		67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67C12B211D6CA16A008F8DC2 /* CreateProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
 		67C8D5301CDE5D910075F435 /* WDTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDTextField.swift; sourceTree = "<group>"; };
 		67C90ADA1D1062A300F1CDCB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -156,7 +158,7 @@
 		672B44011D04862400FC31FC /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
+				67C12B201D6CA12B008F8DC2 /* Project */,
 				672B44021D04867B00FC31FC /* WDMainNavigationViewController.swift */,
 				672B44041D0489DF00FC31FC /* WDMessengerViewController.swift */,
 				672B44061D0489F700FC31FC /* WDRequestViewController.swift */,
@@ -256,6 +258,15 @@
 				679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		67C12B201D6CA12B008F8DC2 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
+				67C12B211D6CA16A008F8DC2 /* CreateProjectViewController.swift */,
+			);
+			name = Project;
 			sourceTree = "<group>";
 		};
 		67E059971CE0F28A00568F4E /* Framework */ = {
@@ -514,6 +525,7 @@
 				672B43F61D047EB500FC31FC /* WDProjectInfoViewController.swift in Sources */,
 				672B44051D0489DF00FC31FC /* WDMessengerViewController.swift in Sources */,
 				672B44091D048A1700FC31FC /* WDNotificationViewController.swift in Sources */,
+				67C12B221D6CA16A008F8DC2 /* CreateProjectViewController.swift in Sources */,
 				679966951CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld in Sources */,
 				6783CF261D140BEA008BBB4E /* ProjectInforTableViewCell.swift in Sources */,
 				6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */,

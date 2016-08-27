@@ -22,7 +22,7 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBarHidden = true
 //        // Do any additional setup after loading the view.
 //        let leftUserView:UIImageView = UIImageView (image: UIImage(named: "icon_username"))
 //        leftUserView.frame = CGRectMake(0, 0, 100, 100)

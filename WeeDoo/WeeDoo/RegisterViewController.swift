@@ -17,14 +17,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var tfBirthday: WDTextField!
     @IBOutlet weak var btnSignUp: UIButton!
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +29,11 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func initView()  {
+        self.navigationController?.navigationBarHidden = false
+         tfFullName.addLeftView("icon_username")
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -22,7 +22,7 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBarHidden = true
+      
 //        // Do any additional setup after loading the view.
 //        let leftUserView:UIImageView = UIImageView (image: UIImage(named: "icon_username"))
 //        leftUserView.frame = CGRectMake(0, 0, 100, 100)
@@ -43,6 +43,11 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().clientID = "120548501506-h3lmob0l06ierfkmjg7j32isj3gt630v.apps.googleusercontent.com"
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {

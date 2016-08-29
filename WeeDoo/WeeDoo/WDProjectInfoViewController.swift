@@ -26,6 +26,10 @@ class WDProjectInfoViewController: WDBaseProjectDetailViewController,UITableView
         // Dispose of any resources that can be recreated.
     }
     
+    override func leftButtonClicked() {
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
+    
 //MARK:UITableViewDelegate
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 9;

@@ -35,6 +35,8 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
         self.tfPassword.addLeftView("icon_password")
         self.loginButton.layer.cornerRadius = 15
         self.signupButton.layer.cornerRadius = 15
+        self.signupButton.layer.borderColor = UIColor(rgba: AppColors.mainBackground).CGColor
+        self.signupButton.layer.borderWidth = 1.0
     }
     
     func registerGoogleSignin() {
@@ -193,11 +195,10 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     }
     */
     func returnUserData(){
-        let parameter:NSMutableDictionary = NSMutableDictionary()
-        parameter.setValue("id,name,email", forKey: "fields")
+        let parameter: [String: AnyObject] = ["id,name,email": "fields"]
         
         let graphRequest = FBSDKGraphRequest(graphPath: "me",
-            parameters:parameter as [NSObject : AnyObject])
+            parameters:parameter)
         
 //        let HUD = BBK_Utils.displayBabyLoaderHUD(self.navigationController?.view, contentText: "")
         // After finishing authentication with Facebook, go on to login to Babykins backend

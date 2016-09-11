@@ -18,7 +18,13 @@ class WDTextField: UITextField {
         // Drawing code
     }
     */
+    
     func addLeftView(imageName : String){
+        
+        let placeholderString = NSAttributedString(string: placeholder!, attributes: [NSForegroundColorAttributeName: UIColor.whiteColor()])
+        self.attributedPlaceholder = placeholderString
+
+        
         let leftImageView : UIImageView = UIImageView (image: UIImage(named: imageName))
         self.leftView = leftImageView
         self.leftViewMode = UITextFieldViewMode.Always

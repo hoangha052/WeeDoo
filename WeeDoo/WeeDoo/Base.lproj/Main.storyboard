@@ -135,7 +135,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dId-lm-DGg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_signin" translatesAutoresizingMaskIntoConstraints="NO" id="dId-lm-DGg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfw-lU-B6s">
@@ -165,7 +165,8 @@
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email or phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JcJ-UO-Kmc" customClass="WDTextField" customModule="WeeDoo" customModuleProvider="target">
                                                         <rect key="frame" x="50" y="16" width="200" height="30"/>
-                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
@@ -180,7 +181,8 @@
                                                     </view>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBH-14-rol" customClass="WDTextField" customModule="WeeDoo" customModuleProvider="target">
                                                         <rect key="frame" x="50" y="57" width="200" height="30"/>
-                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
@@ -224,21 +226,18 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r31-t2-fKI">
                                                         <rect key="frame" x="50" y="288" width="30" height="30"/>
-                                                        <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="btnLoginTwitterPressed:" destination="boY-We-pMt" eventType="touchUpInside" id="P5h-oh-0nW"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jE-V5-Gfa">
                                                         <rect key="frame" x="220" y="288" width="30" height="30"/>
-                                                        <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="btnLoginGooglePressed:" destination="boY-We-pMt" eventType="touchUpInside" id="C3Y-AX-83x"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-ec-Iqy">
                                                         <rect key="frame" x="135" y="288" width="30" height="30"/>
-                                                        <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="btnLoginFacebookPressed:" destination="boY-We-pMt" eventType="touchUpInside" id="TG3-ul-uBs"/>
                                                         </connections>
@@ -258,7 +257,7 @@
                                                         <rect key="frame" x="50" y="288" width="200" height="30"/>
                                                     </imageView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="1" green="0.47761409440000002" blue="0.6617975962" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="351" id="Bbi-VI-bmR"/>
                                                     <constraint firstAttribute="width" constant="300" id="fxc-IC-pFo"/>
@@ -271,7 +270,7 @@
                                                 </variation>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="SNv-5d-3Pl" firstAttribute="centerX" secondItem="Dc7-zA-DK2" secondAttribute="centerX" id="57B-77-y1Y"/>
                                             <constraint firstItem="yo2-Zk-9n2" firstAttribute="centerX" secondItem="Dc7-zA-DK2" secondAttribute="centerX" id="5mC-Rk-eAJ"/>
@@ -307,6 +306,8 @@
                     <navigationItem key="navigationItem" id="tIb-BU-mcJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="loginButton" destination="O0U-i3-Km9" id="xDw-UJ-3aZ"/>
+                        <outlet property="signupButton" destination="Get-FS-1Ci" id="HkJ-g3-Kpm"/>
                         <outlet property="tfName" destination="JcJ-UO-Kmc" id="aUt-gK-qY0"/>
                         <outlet property="tfPassword" destination="bBH-14-rol" id="aEQ-Nt-pbW"/>
                         <segue destination="f0c-mq-TCN" kind="push" identifier="loginSegue" id="nyL-L0-q3u"/>
@@ -572,13 +573,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyy-Zl-Bjw">
                                                         <rect key="frame" x="0.0" y="12" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EX-9r-bHI">
                                                         <rect key="frame" x="161" y="12" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UwU-z1-4iF">
@@ -594,13 +595,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fm-Mw-g54">
                                                         <rect key="frame" x="0.0" y="55" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hak-3d-33v">
                                                         <rect key="frame" x="161" y="55" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6eK-ei-tvb">
@@ -616,13 +617,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ept-P8-jeB">
                                                         <rect key="frame" x="0.0" y="93" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcZ-rL-ibE">
                                                         <rect key="frame" x="161" y="93" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pa8-Lg-FqF">
@@ -638,13 +639,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhC-nF-oW2">
                                                         <rect key="frame" x="3" y="131" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-VL-vmQ">
                                                         <rect key="frame" x="164" y="131" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-jC-jzV">
@@ -660,13 +661,13 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fao-vS-Qmr">
                                                         <rect key="frame" x="3" y="180" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvH-9n-8vf">
                                                         <rect key="frame" x="164" y="180" width="69" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIb-Ux-XnW">
@@ -1118,6 +1119,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bg_signin" width="334" height="590"/>
         <image name="ic_message" width="29" height="29"/>
         <image name="ic_more" width="27" height="15"/>
         <image name="ic_newfeed" width="31" height="25"/>

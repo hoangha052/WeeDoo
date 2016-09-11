@@ -32,7 +32,12 @@ class RegisterViewController: UIViewController {
     
     func initView()  {
         self.navigationController?.navigationBarHidden = false
-         tfFullName.addLeftView("icon_username")
+        tfFullName.addLeftView("icon_username")
+        tfEmail.addLeftView("ic_mail")
+        tfPassword.addLeftView("icon_password")
+        tfMobile.addLeftView("ic_phone")
+        tfBirthday.addLeftView("ic_calendar")
+        btnSignUp.layer.cornerRadius = 15
         
     }
 

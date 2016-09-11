@@ -26,6 +26,7 @@ class WDTextField: UITextField {
 
         
         let leftImageView : UIImageView = UIImageView (image: UIImage(named: imageName))
+        leftImageView.frame = CGRectMake(0, 0, 15, 15)
         self.leftView = leftImageView
         self.leftViewMode = UITextFieldViewMode.Always
     }

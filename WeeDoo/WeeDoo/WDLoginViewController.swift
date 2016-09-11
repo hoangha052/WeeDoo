@@ -11,7 +11,7 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 import Google
 import TwitterKit
-
+import SnapKit
 
 class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
 

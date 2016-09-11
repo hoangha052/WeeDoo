@@ -30,31 +30,35 @@ class BaseNavigationViewController: UIViewController {
                 NSFontAttributeName:UIFont.systemFontOfSize(17.0)]),
                                        forState: UIControlState.Normal)
         rightButton.addTarget(self, action:#selector(BaseNavigationViewController.rightButtonClicked), forControlEvents: UIControlEvents.TouchUpInside)
-        rightButton.frame = CGRectMake(0, 0, 50, 50)
+        rightButton.frame = CGRectMake(0, 0, 100, 50)
         rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Right
         let rightBarButton = UIBarButtonItem(customView: rightButton)
         self.navigationItem.rightBarButtonItem = rightBarButton
 
-        let button:UIButton = UIButton(type: UIButtonType.Custom)
+        let leftButton:UIButton = UIButton(type: UIButtonType.Custom)
 //        button.setImage(UIImage(named: imageName),
 //                        forState: UIControlState.Normal)
-        button.addTarget(self, action:#selector(BaseNavigationViewController.rightButtonClicked), forControlEvents: UIControlEvents.TouchUpInside)
-        button.frame = CGRectMake(0, 0, 50, 50)
-        button.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
+        leftButton.addTarget(self, action:#selector(BaseNavigationViewController.leftButtonClicked), forControlEvents: UIControlEvents.TouchUpInside)
+        leftButton.frame = CGRectMake(0, 0, 100, 50)
+        leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         let attributedTitle = NSAttributedString(string: titleLeftButton as String, attributes:
             [NSForegroundColorAttributeName : UIColor.whiteColor(),
                 NSFontAttributeName:UIFont.systemFontOfSize(17.0)])
             
-        button.setAttributedTitle(attributedTitle, forState: UIControlState.Normal)
-        let lefBarButton = UIBarButtonItem(customView: button)
+        leftButton.setAttributedTitle(attributedTitle, forState: UIControlState.Normal)
+        let lefBarButton = UIBarButtonItem(customView: leftButton)
         self.navigationItem.leftBarButtonItem = lefBarButton
 
     }
     
     func rightButtonClicked() -> Void {
         print("heelloDone");
+        
     }
     
+    func leftButtonClicked()  {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

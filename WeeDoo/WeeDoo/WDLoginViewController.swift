@@ -19,22 +19,25 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     
     @IBOutlet weak var tfPassword: WDTextField!
     
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        // Do any additional setup after loading the view.
-//        let leftUserView:UIImageView = UIImageView (image: UIImage(named: "icon_username"))
-//        leftUserView.frame = CGRectMake(0, 0, 100, 100)
-//        leftUserView.contentMode = UIViewContentMode.ScaleAspectFit
-//        let leftPWView:UIImageView = UIImageView (image: UIImage(named: "icon_password"))
-//        
-//        self.tfName.leftView = leftUserView
-//        self.tfName.leftViewMode = UITextFieldViewMode.Always
-//        self.tfPassword.leftView = leftPWView
-//        self.tfPassword.leftViewMode = UITextFieldViewMode.Always
+        initView()
+        registerGoogleSignin()
+        
+    }
+    
+    func initView() {
         self.tfName.addLeftView("icon_username")
         self.tfPassword.addLeftView("icon_password")
+        self.loginButton.layer.cornerRadius = 15
+        self.signupButton.layer.cornerRadius = 15
+    }
+    
+    func registerGoogleSignin() {
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
@@ -42,7 +45,11 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().clientID = "120548501506-h3lmob0l06ierfkmjg7j32isj3gt630v.apps.googleusercontent.com"
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,6 +65,7 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     
     
     @IBAction func btnSignUpPressed(sender: AnyObject) {
+        self.performSegueWithIdentifier("RegisterSegue", sender: nil)
     }
     
     

@@ -18,7 +18,7 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.addNavigation("Project", titleLeftButton:"", titleRightButton: "Done")
+        self.addNavigation("Project", titleLeftButton:"", titleRightButton: "New")
         self.tableview .registerNib((UINib (nibName: "ProjectTableViewCell", bundle: nil)), forCellReuseIdentifier: "TitleCell")
         
 
@@ -35,6 +35,10 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
         // Dispose of any resources that can be recreated.
     }
 
+    override func rightButtonClicked() {
+        self.performSegueWithIdentifier("CreateProjectSegue", sender: nil)
+        
+    }
     
     //MARK - UITableView Delegate
     

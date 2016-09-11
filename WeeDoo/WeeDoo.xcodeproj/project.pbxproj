@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B157E058B646E0A1DE50E5B /* Pods_WeeDoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF8CA450EA7E4E8EBACF69C /* Pods_WeeDoo.framework */; };
 		672B43F41D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F31D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift */; };
 		672B43F61D047EB500FC31FC /* WDProjectInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F51D047EB500FC31FC /* WDProjectInfoViewController.swift */; };
 		672B43F81D0481E100FC31FC /* WDProjectTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B43F71D0481E100FC31FC /* WDProjectTaskListViewController.swift */; };
@@ -20,8 +21,8 @@
 		672B44091D048A1700FC31FC /* WDNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B44081D048A1700FC31FC /* WDNotificationViewController.swift */; };
 		672B440B1D048A3C00FC31FC /* WDNewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B440A1D048A3C00FC31FC /* WDNewFeedViewController.swift */; };
 		672B440D1D048D9C00FC31FC /* WDMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B440C1D048D9C00FC31FC /* WDMoreViewController.swift */; };
-		6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 674544691CEAB942008CAE68 /* libPods.a */; };
 		675D2DA31CFF421C00F67BAE /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */; };
+		6783CF261D140BEA008BBB4E /* ProjectInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6783CF251D140BEA008BBB4E /* ProjectInforTableViewCell.swift */; };
 		6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */; };
 		6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799668E1CDA4ABF00FF52C6 /* ViewController.swift */; };
 		679966921CDA4ABF00FF52C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679966901CDA4ABF00FF52C6 /* Main.storyboard */; };
@@ -33,7 +34,9 @@
 		679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */; };
 		679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */; };
 		67A5E7CC1CE3834700CD8FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */; };
+		67C12B221D6CA16A008F8DC2 /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C12B211D6CA16A008F8DC2 /* CreateProjectViewController.swift */; };
 		67C8D5311CDE5D910075F435 /* WDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8D5301CDE5D910075F435 /* WDTextField.swift */; };
+		67C90ADB1D1062A300F1CDCB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C90ADA1D1062A300F1CDCB /* RegisterViewController.swift */; };
 		67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */; };
 		67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E0599A1CE0F2A800568F4E /* FBSDKLoginKit.framework */; };
 		67E0599F1CE0FFC900568F4E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E0599E1CE0FFC900568F4E /* FBSDKShareKit.framework */; };
@@ -74,9 +77,9 @@
 		672B44081D048A1700FC31FC /* WDNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDNotificationViewController.swift; sourceTree = "<group>"; };
 		672B440A1D048A3C00FC31FC /* WDNewFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDNewFeedViewController.swift; sourceTree = "<group>"; };
 		672B440C1D048D9C00FC31FC /* WDMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDMoreViewController.swift; sourceTree = "<group>"; };
-		674544691CEAB942008CAE68 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeeDoo-Bridging-Header.h"; sourceTree = "<group>"; };
 		675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		6783CF251D140BEA008BBB4E /* ProjectInforTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectInforTableViewCell.swift; sourceTree = "<group>"; };
 		679966891CDA4ABF00FF52C6 /* WeeDoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeDoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6799668C1CDA4ABF00FF52C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6799668E1CDA4ABF00FF52C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +97,9 @@
 		679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDLoginViewController.swift; sourceTree = "<group>"; };
 		679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harlow Solid Italic Italic.ttf"; sourceTree = "<group>"; };
 		67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		67C12B211D6CA16A008F8DC2 /* CreateProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
 		67C8D5301CDE5D910075F435 /* WDTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDTextField.swift; sourceTree = "<group>"; };
+		67C90ADA1D1062A300F1CDCB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		67E059981CE0F29F00568F4E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		67E0599A1CE0F2A800568F4E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		67E0599E1CE0FFC900568F4E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -102,8 +107,9 @@
 		67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectTableViewCell.xib; sourceTree = "<group>"; };
 		67EA45301CFCACBA00C07D55 /* Project.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Project.storyboard; sourceTree = "<group>"; };
-		6EDD7805B0831E4440727341 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A2DF8F7AF161760358E9CACB /* Pods-WeeDoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeeDoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo.release.xcconfig"; sourceTree = "<group>"; };
+		AB3B2D7B3A644ECD3550DD7B /* Pods-WeeDoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeeDoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo.debug.xcconfig"; sourceTree = "<group>"; };
+		FCF8CA450EA7E4E8EBACF69C /* Pods_WeeDoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeeDoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +117,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6745446A1CEAB942008CAE68 /* libPods.a in Frameworks */,
 				67E0599B1CE0F2A800568F4E /* FBSDKLoginKit.framework in Frameworks */,
 				67E059991CE0F29F00568F4E /* FBSDKCoreKit.framework in Frameworks */,
 				67E0599F1CE0FFC900568F4E /* FBSDKShareKit.framework in Frameworks */,
+				2B157E058B646E0A1DE50E5B /* Pods_WeeDoo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +158,7 @@
 		672B44011D04862400FC31FC /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
+				67C12B201D6CA12B008F8DC2 /* Project */,
 				672B44021D04867B00FC31FC /* WDMainNavigationViewController.swift */,
 				672B44041D0489DF00FC31FC /* WDMessengerViewController.swift */,
 				672B44061D0489F700FC31FC /* WDRequestViewController.swift */,
@@ -170,8 +176,8 @@
 				679966A31CDA4AC000FF52C6 /* WeeDooTests */,
 				679966AE1CDA4AC000FF52C6 /* WeeDooUITests */,
 				6799668A1CDA4ABF00FF52C6 /* Products */,
-				6A3A3EC9D124F5A748050151 /* Pods */,
 				801E1445004D2BB26DE03487 /* Frameworks */,
+				7FC2322507F2CF11D087458C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +239,7 @@
 				679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */,
 				6745447B1CEB2859008CAE68 /* WeeDoo-Bridging-Header.h */,
 				675D2DA21CFF421C00F67BAE /* BaseNavigationViewController.swift */,
+				67C90ADA1D1062A300F1CDCB /* RegisterViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -251,6 +258,15 @@
 				679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		67C12B201D6CA12B008F8DC2 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				67EA45241CFB5E3E00C07D55 /* WDProjectViewController.swift */,
+				67C12B211D6CA16A008F8DC2 /* CreateProjectViewController.swift */,
+			);
+			name = Project;
 			sourceTree = "<group>";
 		};
 		67E059971CE0F28A00568F4E /* Framework */ = {
@@ -283,15 +299,16 @@
 			children = (
 				67EA45291CFB659D00C07D55 /* ProjectTableViewCell.swift */,
 				67EA452A1CFB659D00C07D55 /* ProjectTableViewCell.xib */,
+				6783CF251D140BEA008BBB4E /* ProjectInforTableViewCell.swift */,
 			);
 			name = ViewCell;
 			sourceTree = "<group>";
 		};
-		6A3A3EC9D124F5A748050151 /* Pods */ = {
+		7FC2322507F2CF11D087458C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */,
-				6EDD7805B0831E4440727341 /* Pods.release.xcconfig */,
+				AB3B2D7B3A644ECD3550DD7B /* Pods-WeeDoo.debug.xcconfig */,
+				A2DF8F7AF161760358E9CACB /* Pods-WeeDoo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -299,7 +316,7 @@
 		801E1445004D2BB26DE03487 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				674544691CEAB942008CAE68 /* libPods.a */,
+				FCF8CA450EA7E4E8EBACF69C /* Pods_WeeDoo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,12 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 679966B41CDA4AC000FF52C6 /* Build configuration list for PBXNativeTarget "WeeDoo" */;
 			buildPhases = (
-				538E1AA478D0BA776E0AE64C /* Check Pods Manifest.lock */,
+				6708AF065B4401756A3B1D2B /* [CP] Check Pods Manifest.lock */,
 				679966851CDA4ABF00FF52C6 /* Sources */,
 				679966861CDA4ABF00FF52C6 /* Frameworks */,
 				679966871CDA4ABF00FF52C6 /* Resources */,
-				E6D28DA7B978B3D2400C18A3 /* Embed Pods Frameworks */,
-				CA8DFA3C51A28BFC87F38DEB /* Copy Pods Resources */,
+				49D7FC1915436EC7B6A62853 /* [CP] Embed Pods Frameworks */,
+				44BA67AEEAB33CDFC4698260 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,50 +455,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		538E1AA478D0BA776E0AE64C /* Check Pods Manifest.lock */ = {
+		44BA67AEEAB33CDFC4698260 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49D7FC1915436EC7B6A62853 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeeDoo/Pods-WeeDoo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6708AF065B4401756A3B1D2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CA8DFA3C51A28BFC87F38DEB /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E6D28DA7B978B3D2400C18A3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"",
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -492,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				672B440B1D048A3C00FC31FC /* WDNewFeedViewController.swift in Sources */,
+				67C90ADB1D1062A300F1CDCB /* RegisterViewController.swift in Sources */,
 				672B43FE1D0482B300FC31FC /* WDProjectOptionViewController.swift in Sources */,
 				672B44031D04867B00FC31FC /* WDMainNavigationViewController.swift in Sources */,
 				6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */,
@@ -508,7 +525,9 @@
 				672B43F61D047EB500FC31FC /* WDProjectInfoViewController.swift in Sources */,
 				672B44051D0489DF00FC31FC /* WDMessengerViewController.swift in Sources */,
 				672B44091D048A1700FC31FC /* WDNotificationViewController.swift in Sources */,
+				67C12B221D6CA16A008F8DC2 /* CreateProjectViewController.swift in Sources */,
 				679966951CDA4ABF00FF52C6 /* WeeDoo.xcdatamodeld in Sources */,
+				6783CF261D140BEA008BBB4E /* ProjectInforTableViewCell.swift in Sources */,
 				6799668D1CDA4ABF00FF52C6 /* AppDelegate.swift in Sources */,
 				672B44071D0489F700FC31FC /* WDRequestViewController.swift in Sources */,
 				672B440D1D048D9C00FC31FC /* WDMoreViewController.swift in Sources */,
@@ -651,7 +670,7 @@
 		};
 		679966B51CDA4AC000FF52C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AAD990193DAC5A5A4A00BF0 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = AB3B2D7B3A644ECD3550DD7B /* Pods-WeeDoo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -659,97 +678,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeeDoo/Framework",
-					"$(PROJECT_DIR)/WeeDoo/Pods",
+					"$(PROJECT_DIR)/Pods",
 					"$(PROJECT_DIR)/WeeDoo",
 				);
 				INFOPLIST_FILE = WeeDoo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"GGLSignIn\"",
-					"-l\"GIPNSURL+FIFE_external\"",
-					"-l\"GSDK_Overload_external\"",
-					"-l\"GTMOAuth2_external_external\"",
-					"-l\"GTMOAuth2_internal_external\"",
-					"-l\"GTMSessionFetcher_core_external\"",
-					"-l\"GTMSessionFetcher_full_external\"",
-					"-l\"GTMStackTrace_external\"",
-					"-l\"GTM_AddressBook_external\"",
-					"-l\"GTM_DebugUtils_external\"",
-					"-l\"GTM_GTMURLBuilder_external\"",
-					"-l\"GTM_KVO_external\"",
-					"-l\"GTM_NSData+zlib\"",
-					"-l\"GTM_NSDictionary+URLArguments_external\"",
-					"-l\"GTM_NSScannerJSON_external\"",
-					"-l\"GTM_NSStringHTML_external\"",
-					"-l\"GTM_NSStringXML_external\"",
-					"-l\"GTM_Regex_external\"",
-					"-l\"GTM_RoundedRectPath_external\"",
-					"-l\"GTM_StringEncoding_external\"",
-					"-l\"GTM_SystemVersion_external\"",
-					"-l\"GTM_UIFont+LineHeight_external\"",
-					"-l\"GTM_core_external\"",
-					"-l\"GTM_iPhone_external\"",
-					"-l\"IQKeyboardManager\"",
-					"-l\"MBProgressHUD\"",
-					"-l\"OpenInChrome_external\"",
-					"-l\"ProtocolBuffers_external\"",
-					"-l\"SignIn_external\"",
-					"-l\"sqlite3\"",
-					"-l\"stdc++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"Accounts\"",
-					"-framework",
-					"\"AddressBook\"",
-					"-framework",
-					"\"AssetsLibrary\"",
-					"-framework",
-					"\"CoreData\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"CoreMotion\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"MessageUI\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"SafariServices\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"Social\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"TwitterCore\"",
-					"-framework",
-					"\"TwitterKit\"",
-					"-framework",
-					"\"UIKit\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainmaker-labs.WeeDoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeeDoo/WeeDoo-Bridging-Header.h";
@@ -760,7 +697,7 @@
 		};
 		679966B61CDA4AC000FF52C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EDD7805B0831E4440727341 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A2DF8F7AF161760358E9CACB /* Pods-WeeDoo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -769,96 +706,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeeDoo/Framework",
 					"$(PROJECT_DIR)/WeeDoo/Pods",
-					"$(PROJECT_DIR)/WeeDoo",
 				);
 				INFOPLIST_FILE = WeeDoo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"GGLSignIn\"",
-					"-l\"GIPNSURL+FIFE_external\"",
-					"-l\"GSDK_Overload_external\"",
-					"-l\"GTMOAuth2_external_external\"",
-					"-l\"GTMOAuth2_internal_external\"",
-					"-l\"GTMSessionFetcher_core_external\"",
-					"-l\"GTMSessionFetcher_full_external\"",
-					"-l\"GTMStackTrace_external\"",
-					"-l\"GTM_AddressBook_external\"",
-					"-l\"GTM_DebugUtils_external\"",
-					"-l\"GTM_GTMURLBuilder_external\"",
-					"-l\"GTM_KVO_external\"",
-					"-l\"GTM_NSData+zlib\"",
-					"-l\"GTM_NSDictionary+URLArguments_external\"",
-					"-l\"GTM_NSScannerJSON_external\"",
-					"-l\"GTM_NSStringHTML_external\"",
-					"-l\"GTM_NSStringXML_external\"",
-					"-l\"GTM_Regex_external\"",
-					"-l\"GTM_RoundedRectPath_external\"",
-					"-l\"GTM_StringEncoding_external\"",
-					"-l\"GTM_SystemVersion_external\"",
-					"-l\"GTM_UIFont+LineHeight_external\"",
-					"-l\"GTM_core_external\"",
-					"-l\"GTM_iPhone_external\"",
-					"-l\"IQKeyboardManager\"",
-					"-l\"MBProgressHUD\"",
-					"-l\"OpenInChrome_external\"",
-					"-l\"ProtocolBuffers_external\"",
-					"-l\"SignIn_external\"",
-					"-l\"sqlite3\"",
-					"-l\"stdc++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"AVFoundation\"",
-					"-framework",
-					"\"Accounts\"",
-					"-framework",
-					"\"AddressBook\"",
-					"-framework",
-					"\"AssetsLibrary\"",
-					"-framework",
-					"\"CoreData\"",
-					"-framework",
-					"\"CoreFoundation\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreMedia\"",
-					"-framework",
-					"\"CoreMotion\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"MessageUI\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"SafariServices\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"Social\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"TwitterCore\"",
-					"-framework",
-					"\"TwitterKit\"",
-					"-framework",
-					"\"UIKit\"",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainmaker-labs.WeeDoo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeeDoo/WeeDoo-Bridging-Header.h";

@@ -18,7 +18,8 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.addNavigation("Project", titleLeftButton:"", titleRightButton: "New")
+        self.addNavigation("Project", titleLeftButton:"", titleRightButton: "")
+        self.addRightImageButton("ic_newproject")
         self.tableview .registerNib((UINib (nibName: "ProjectTableViewCell", bundle: nil)), forCellReuseIdentifier: "TitleCell")
         
 

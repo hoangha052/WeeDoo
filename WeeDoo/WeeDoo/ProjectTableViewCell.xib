@@ -86,6 +86,16 @@
                 </subviews>
                 <color key="backgroundColor" red="0.8784313725490196" green="0.98431372549019602" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="completeLabel" destination="kkR-05-lV9" id="8qP-Jy-cs9"/>
+                <outlet property="durationLabel" destination="6Gr-eQ-6uO" id="N5R-0p-a0z"/>
+                <outlet property="finishLabel" destination="9XQ-9p-Hz8" id="Pdv-FN-333"/>
+                <outlet property="imageStatusView" destination="Bjh-sJ-z1m" id="L1f-aS-Cny"/>
+                <outlet property="numberLabel" destination="Fx4-74-okx" id="ghn-dq-9jr"/>
+                <outlet property="projectNameLabel" destination="gJZ-iA-KKX" id="2wn-ia-QyW"/>
+                <outlet property="startLabel" destination="tsg-GX-q66" id="ss8-HK-HR0"/>
+                <outlet property="statusLabel" destination="6xz-BI-XIr" id="wc4-cg-gBx"/>
+            </connections>
             <point key="canvasLocation" x="313.5" y="162"/>
         </tableViewCell>
     </objects>

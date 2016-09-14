@@ -15,13 +15,14 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
     
     @IBOutlet weak var scrollView: UIScrollView!
 
+    var projectData: [ProjectModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.addNavigation("Project", titleLeftButton:"", titleRightButton: "")
         self.addRightImageButton("ic_newproject")
         self.tableview .registerNib((UINib (nibName: "ProjectTableViewCell", bundle: nil)), forCellReuseIdentifier: "TitleCell")
-        
+        hardcodeData()
 
         // Do any additional setup after loading the view.
     }
@@ -40,18 +41,25 @@ class WDProjectViewController: BaseNavigationViewController, UITableViewDelegate
         self.performSegueWithIdentifier("CreateProjectSegue", sender: nil)
         
     }
+    func hardcodeData() {
+        for _ in 1...10 {
+            let project = ProjectModel()
+            projectData.append(project)
+        }
+    }
     
     //MARK - UITableView Delegate
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15;
+        return projectData.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : ProjectTableViewCell = tableView.dequeueReusableCellWithIdentifier("TitleCell") as! ProjectTableViewCell
         if indexPath.row != 0
         {
-            cell.backgroundColor = UIColor.clearColor()
+            cell.contentView.backgroundColor = UIColor.whiteColor()
+            cell.reloadDataCell(projectData[indexPath.row - 1], index: indexPath.row)
         }
         
         return cell

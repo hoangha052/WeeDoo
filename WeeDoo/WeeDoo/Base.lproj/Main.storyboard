@@ -1116,7 +1116,7 @@
     </scenes>
     <resources>
         <image name="bg_signin" width="334" height="590"/>
-        <image name="ic_message" width="29" height="29"/>
+        <image name="ic_message" width="30" height="30"/>
         <image name="ic_more" width="27" height="15"/>
         <image name="ic_newfeed" width="31" height="25"/>
         <image name="ic_notifications" width="30" height="30"/>

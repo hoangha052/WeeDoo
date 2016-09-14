@@ -33,6 +33,7 @@
 		679966B01CDA4AC000FF52C6 /* WeeDooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966AF1CDA4AC000FF52C6 /* WeeDooUITests.swift */; };
 		679966BF1CDA4D8D00FF52C6 /* WDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */; };
 		679966E81CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */; };
+		67A4CE8F1D88594200517DC2 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4CE8E1D88594200517DC2 /* ProjectModel.swift */; };
 		67A5E7CC1CE3834700CD8FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */; };
 		67BEBF721D852B32003AD9A1 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BEBF661D852B32003AD9A1 /* ArrayExtension.swift */; };
 		67BEBF731D852B32003AD9A1 /* DecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BEBF671D852B32003AD9A1 /* DecoderExtension.swift */; };
@@ -109,6 +110,7 @@
 		679966B11CDA4AC000FF52C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679966BE1CDA4D8D00FF52C6 /* WDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDLoginViewController.swift; path = ../WDLoginViewController.swift; sourceTree = "<group>"; };
 		679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harlow Solid Italic Italic.ttf"; sourceTree = "<group>"; };
+		67A4CE8E1D88594200517DC2 /* ProjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		67A5E7CB1CE3834700CD8FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67BEBF661D852B32003AD9A1 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		67BEBF671D852B32003AD9A1 /* DecoderExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoderExtension.swift; sourceTree = "<group>"; };
@@ -220,6 +222,8 @@
 		6799668B1CDA4ABF00FF52C6 /* WeeDoo */ = {
 			isa = PBXGroup;
 			children = (
+				67A4CE8D1D88591900517DC2 /* Model */,
+				67A4CE8C1D8858F800517DC2 /* New Group */,
 				67EA45271CFB656700C07D55 /* View */,
 				67EA45261CFB655E00C07D55 /* Common */,
 				67E059971CE0F28A00568F4E /* Framework */,
@@ -283,6 +287,21 @@
 				679966E71CDBA36C00FF52C6 /* Harlow Solid Italic Italic.ttf */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		67A4CE8C1D8858F800517DC2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		67A4CE8D1D88591900517DC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67A4CE8E1D88594200517DC2 /* ProjectModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		67BEBF651D852B32003AD9A1 /* Extension */ = {
@@ -573,6 +592,7 @@
 				672B44031D04867B00FC31FC /* WDMainNavigationViewController.swift in Sources */,
 				6799668F1CDA4ABF00FF52C6 /* ViewController.swift in Sources */,
 				672B43F41D047E0B00FC31FC /* WDBaseProjectDetailViewController.swift in Sources */,
+				67A4CE8F1D88594200517DC2 /* ProjectModel.swift in Sources */,
 				67EA452B1CFB659D00C07D55 /* ProjectTableViewCell.swift in Sources */,
 				672B43F81D0481E100FC31FC /* WDProjectTaskListViewController.swift in Sources */,
 				67EA45251CFB5E3E00C07D55 /* WDProjectViewController.swift in Sources */,

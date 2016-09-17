@@ -15,5 +15,9 @@ target 'WeeDoo' do
     pod 'TwitterKit'
     pod 'CVCalendar', '~> 1.2.9'
     pod 'IQKeyboardManagerSwift', '4.0.3'
-
+    pod 'Gloss',      '~> 0.7.3'
+    pod 'Kingfisher', '~> 2.4.1'
+    pod 'Firebase'
+    pod 'Firebase/Messaging'
+    pod 'SnapKit', '~> 0.15.0'
 end

@@ -51,6 +51,17 @@ class BaseNavigationViewController: UIViewController {
 
     }
     
+    func addRightImageButton(imageName: String) {
+        let rightButton:UIButton = UIButton(type: UIButtonType.Custom)
+        rightButton.addTarget(self, action:#selector(BaseNavigationViewController.rightButtonClicked), forControlEvents: UIControlEvents.TouchUpInside)
+        rightButton.frame = CGRectMake(0, 0, 30, 30)
+        rightButton.setBackgroundImage(UIImage.init(named: imageName), forState: .Normal)
+//        rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Right
+        let rightBarButton = UIBarButtonItem(customView: rightButton)
+        self.navigationItem.rightBarButtonItem = rightBarButton
+
+    }
+    
     func rightButtonClicked() -> Void {
         print("heelloDone");
         

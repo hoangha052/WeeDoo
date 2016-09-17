@@ -31,6 +31,8 @@ class WDLoginViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDel
     }
     
     func initView() {
+        //TODO: Replace icon twitter, facebook, google
+        
         self.tfName.addLeftView("icon_username")
         self.tfPassword.addLeftView("icon_password")
         self.loginButton.layer.cornerRadius = 15
